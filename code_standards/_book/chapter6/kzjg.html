@@ -1,0 +1,410 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>控制结构 | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.2.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter7/bg.html" />
+    
+    
+    <link rel="prev" href="../chapter5/sx.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="6" data-basepath=".." data-revision="Tue Aug 18 2015 17:37:32 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1/js.html">
+            
+                
+                    <a href="../chapter1/js.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2/gl.html">
+            
+                
+                    <a href="../chapter2/gl.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        概览
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="chapter3/tz.html">
+            
+                
+                    <a href="../chapter3/tz.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        通则
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="chapter4/sm.html">
+            
+                
+                    <a href="../chapter4/sm.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        namespace 以及 use 声明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="chapter5/sx.html">
+            
+                
+                    <a href="../chapter5/sx.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        类、属性和方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="6" data-path="chapter6/kzjg.html">
+            
+                
+                    <a href="../chapter6/kzjg.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        控制结构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="chapter7/bg.html">
+            
+                
+                    <a href="../chapter7/bg.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        闭包
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="chapter8/zj.html">
+            
+                
+                    <a href="../chapter8/zj.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84">&#x63A7;&#x5236;&#x7ED3;&#x6784;</h1>
+<p>&#x63A7;&#x5236;&#x7ED3;&#x6784;&#x7684;&#x57FA;&#x672C;&#x89C4;&#x8303;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x63A7;&#x5236;&#x7ED3;&#x6784;&#x5173;&#x952E;&#x8BCD;&#x540E;&#x5FC5;&#x987B;&#x6709;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#x3002;</li>
+<li>&#x5DE6;&#x62EC;&#x53F7; ( &#x540E;&#x4E00;&#x5B9A;&#x4E0D;&#x80FD;&#x6709;&#x7A7A;&#x683C;&#x3002;</li>
+<li>&#x53F3;&#x62EC;&#x53F7; ) &#x524D;&#x4E5F;&#x4E00;&#x5B9A;&#x4E0D;&#x80FD;&#x6709;&#x7A7A;&#x683C;&#x3002;</li>
+<li>&#x53F3;&#x62EC;&#x53F7; ) &#x4E0E;&#x5F00;&#x59CB;&#x82B1;&#x62EC;&#x53F7; { &#x95F4;&#x4E00;&#x5B9A;&#x6709;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#x3002;</li>
+<li>&#x7ED3;&#x6784;&#x4F53;&#x4E3B;&#x4F53;&#x4E00;&#x5B9A;&#x8981;&#x6709;&#x4E00;&#x6B21;&#x7F29;&#x8FDB;&#x3002;</li>
+<li>&#x7ED3;&#x675F;&#x82B1;&#x62EC;&#x53F7; } &#x4E00;&#x5B9A;&#x5728;&#x7ED3;&#x6784;&#x4F53;&#x4E3B;&#x4F53;&#x540E;&#x5355;&#x72EC;&#x6210;&#x884C;&#x3002;</li>
+</ul>
+<p>&#x6BCF;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x4E3B;&#x4F53;&#x90FD;&#x5FC5;&#x987B;&#x88AB;&#x5305;&#x542B;&#x5728;&#x6210;&#x5BF9;&#x7684;&#x82B1;&#x62EC;&#x53F7;&#x4E4B;&#x4E2D;&#xFF0C;&#x8FD9;&#x80FD;&#x8BA9;&#x7ED3;&#x6784;&#x4F53;&#x66F4;&#x52A0;&#x7ED3;&#x6784;&#x8BDD;&#xFF0C;&#x4EE5;&#x53CA;&#x51CF;&#x5C11;&#x52A0;&#x5165;&#x65B0;&#x884C;&#x65F6;&#xFF0C;&#x51FA;&#x9519;&#x7684;&#x53EF;&#x80FD;&#x6027;&#x3002;</p>
+<h3 id="1-if-%E3%80%81-elseif-%E5%92%8C-else">1.if &#x3001; elseif &#x548C; else</h3>
+<p>&#x6807;&#x51C6;&#x7684;<code>if</code> &#x7ED3;&#x6784;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x6240;&#x793A;&#xFF0C;&#x7559;&#x610F; &#x62EC;&#x53F7;&#x3001;&#x7A7A;&#x683C;&#x4EE5;&#x53CA;&#x82B1;&#x62EC;&#x53F7;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C; &#x6CE8;&#x610F; <code>else</code> &#x548C; <code>elseif</code> &#x90FD;&#x4E0E;&#x524D;&#x9762;&#x7684;&#x7ED3;&#x675F;&#x82B1;&#x62EC;&#x53F7;&#x5728;&#x540C;&#x4E00;&#x884C;&#x3002;</p>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$expr1</span>) {
+    <span class="hljs-comment">// if body</span>
+} <span class="hljs-keyword">elseif</span> (<span class="hljs-variable">$expr2</span>) {
+    <span class="hljs-comment">// elseif body</span>
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// else body;</span>
+}
+</code></pre>
+<p>&#x5E94;&#x8BE5;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x8BCD; <code>elseif</code> &#x4EE3;&#x66FF;&#x6240;&#x6709; <code>else if</code>,&#x4EE5;&#x4F7F;&#x5F97;&#x6240;&#x6709;&#x7684;&#x63A7;&#x5236;&#x5173;&#x952E;&#x5B57;&#x90FD;&#x50CF;&#x662F;&#x5355;&#x72EC;&#x7684;&#x4E00;&#x4E2A;&#x8BCD;&#x3002;</p>
+<h3 id="2-switch-%E5%92%8C-case">2.switch &#x548C; case</h3>
+<p>&#x6807;&#x51C6;&#x7684;<code>switch</code>&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x6240;&#x793A;&#xFF0C;&#x7559;&#x610F;&#x62EC;&#x53F7;&#x3001;&#x7A7A;&#x683C;&#x4EE5;&#x53CA;&#x82B1;&#x62EC;&#x53F7;&#x7684;&#x4F4D;&#x7F6E;&#x3002;<code>case</code>&#x8BED;&#x53E5;&#x5FC5;&#x987B;&#x76F8;&#x5BF9;<code>switch</code>&#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x7F29;&#x8FDB;&#xFF0C;&#x800C;<code>break</code> &#x8BED;&#x53E5;&#x4EE5;&#x53CA; <code>case</code>&#x5185;&#x7684;&#x5176;&#x5B83;&#x8BED;&#x53E5;&#x90FD; &#x5FC5;&#x987B; &#x76F8;&#x5BF9; <code>case</code> &#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x7F29;&#x8FDB;&#x3002; &#x5982;&#x679C;&#x5B58;&#x5728;&#x975E;&#x7A7A;&#x7684;<code>case</code> &#x76F4;&#x7A7F;&#x8BED;&#x53E5;&#xFF0C;&#x4E3B;&#x4F53;&#x91CC;&#x5FC5;&#x987B;&#x6709;&#x7C7B;&#x4F3C;<code>// no break</code> &#x7684;&#x6CE8;&#x91CA;&#x3002;</p>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+<span class="hljs-keyword">switch</span> (<span class="hljs-variable">$expr</span>) {
+    <span class="hljs-keyword">case</span> <span class="hljs-number">0</span>:
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;First case, with a break&apos;</span>;
+        <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;Second case, which falls through&apos;</span>;
+        <span class="hljs-comment">// no break</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:
+    <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>:
+    <span class="hljs-keyword">case</span> <span class="hljs-number">4</span>:
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;Third case, return instead of break&apos;</span>;
+        <span class="hljs-keyword">return</span>;
+    <span class="hljs-keyword">default</span>:
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;Default case&apos;</span>;
+        <span class="hljs-keyword">break</span>;
+}
+</code></pre>
+<h3 id="3-while-%E5%92%8C-do-while">3.while &#x548C; do while</h3>
+<p>&#x4E00;&#x4E2A;&#x89C4;&#x8303;&#x7684; <code>while</code> &#x8BED;&#x53E5;&#x5E94;&#x8BE5;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF0C;&#x6CE8;&#x610F;&#x5176; &#x62EC;&#x53F7;&#x3001;&#x7A7A;&#x683C;&#x4EE5;&#x53CA;&#x82B1;&#x62EC;&#x53F7;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+<span class="hljs-keyword">while</span> (<span class="hljs-variable">$expr</span>) {
+    <span class="hljs-comment">// structure body</span>
+}
+</code></pre>
+<p>&#x6807;&#x51C6;&#x7684; <code>do while</code> &#x8BED;&#x53E5;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF0C;&#x540C;&#x6837;&#x7684;&#xFF0C;&#x6CE8;&#x610F;&#x5176; &#x62EC;&#x53F7;&#x3001;&#x7A7A;&#x683C;&#x4EE5;&#x53CA;&#x82B1;&#x62EC;&#x53F7;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+<span class="hljs-keyword">do</span> {
+    <span class="hljs-comment">// structure body;</span>
+} <span class="hljs-keyword">while</span> (<span class="hljs-variable">$expr</span>);
+</code></pre>
+<h3 id="4-for">4.for</h3>
+<p>&#x6807;&#x51C6;&#x7684; <code>for</code> &#x8BED;&#x53E5;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF0C;&#x6CE8;&#x610F;&#x5176; &#x62EC;&#x53F7;&#x3001;&#x7A7A;&#x683C;&#x4EE5;&#x53CA;&#x82B1;&#x62EC;&#x53F7;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-variable">$i</span> = <span class="hljs-number">0</span>; <span class="hljs-variable">$i</span> &lt; <span class="hljs-number">10</span>; <span class="hljs-variable">$i</span>++) {
+    <span class="hljs-comment">// for body</span>
+}
+</code></pre>
+<h3 id="5-foreach">5.foreach</h3>
+<p>&#x6807;&#x51C6;&#x7684;<code>foreach</code> &#x8BED;&#x53E5;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF0C;&#x6CE8;&#x610F;&#x5176; &#x62EC;&#x53F7;&#x3001;&#x7A7A;&#x683C;&#x4EE5;&#x53CA;&#x82B1;&#x62EC;&#x53F7;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+<span class="hljs-keyword">foreach</span> (<span class="hljs-variable">$iterable</span> <span class="hljs-keyword">as</span> <span class="hljs-variable">$key</span> =&gt; <span class="hljs-variable">$value</span>) {
+    <span class="hljs-comment">// foreach body</span>
+}
+</code></pre>
+<h3 id="6-try-catch">6.try, catch</h3>
+<p>&#x6807;&#x51C6;&#x7684;<code>try catch</code>&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF0C;&#x6CE8;&#x610F;&#x5176; &#x62EC;&#x53F7;&#x3001;&#x7A7A;&#x683C;&#x4EE5;&#x53CA;&#x82B1;&#x62EC;&#x53F7;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-comment">// try body</span>
+} <span class="hljs-keyword">catch</span> (FirstExceptionType <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// catch body</span>
+} <span class="hljs-keyword">catch</span> (OtherExceptionType <span class="hljs-variable">$e</span>) {
+    <span class="hljs-comment">// catch body</span>
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter5/sx.html" class="navigation navigation-prev " aria-label="Previous page: 类、属性和方法"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter7/bg.html" class="navigation navigation-next " aria-label="Next page: 闭包"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
