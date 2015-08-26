@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Introduction | Introduction</title>
+        <title>消息通知流程 | Introduction</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="各文档分享">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
         
         
@@ -25,8 +25,8 @@
         
     
     
-    <link rel="next" href="./chapter1.html" />
     
+    <link rel="prev" href="./chapter2.html" />
     
 
         
@@ -34,7 +34,7 @@
     <body>
         
         
-    <div class="book" data-level="0" data-basepath="." data-revision="Wed Aug 26 2015 16:52:37 GMT+0800 (CST)">
+    <div class="book" data-level="3" data-basepath="." data-revision="Wed Aug 26 2015 16:52:37 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -51,7 +51,7 @@
 
         
     
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="./index.html">
@@ -94,7 +94,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3" data-path="chapter3.html">
+        <li class="chapter active" data-level="3" data-path="chapter3.html">
             
                 
                     <a href="./chapter3.html">
@@ -214,9 +214,34 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="introduction">Introduction</h1>
-<p>&#x5404;&#x6587;&#x6863;&#x5206;&#x4EAB;</p>
+                        <h1 id="%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5%E6%B5%81%E7%A8%8B">&#x6D88;&#x606F;&#x901A;&#x77E5;&#x6D41;&#x7A0B;</h1>
+<h3 id="1-%E6%A6%82%E8%BF%B0">1.&#x6982;&#x8FF0;</h3>
+<p>&#x4EE5;&#x7528;&#x6237;A&#x5411;&#x7528;&#x6237;B&#x53D1;&#x901A;&#x77E5;&#x4E3A;&#x4F8B;</p>
+<p>A&#x5411;B&#x53D1;&#x901A;&#x77E5;&#xFF0C;&#x7CFB;&#x7EDF;&#x5148;&#x5224;&#x65AD;B&#x6709;&#x6CA1;&#x6709;&#x5728;&#x7EBF;&#xFF0C;&#x5982;&#x679C;B&#x4E0D;&#x5728;&#x7EBF;&#xFF0C;&#x901A;&#x77E5;&#x5B58;&#x4E0B;&#x6765;&#xFF0C;&#x6682;&#x4E0D;&#x53D1;&#x9001;</p>
+<p>B&#x5728;&#x7EBF;&#x5206;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;web&#x5728;&#x7EBF;&#xFF08;chrome&#x5728;&#x7EBF;&#x3001;safari&#x5728;&#x7EBF;&#xFF09;&#xFF0C;&#x79FB;&#x52A8;&#x5728;&#x7EBF;&#xFF1B;&#x5982;&#x679C;&#x679C;&#x540C;&#x65F6;&#x5728;&#x7EBF;&#xFF0C;&#x901A;&#x77E5;&#x90FD;&#x8981;&#x63A8;&#x9001;&#x5230;</p>
+<p>B&#x9000;&#x51FA;&#x4E5F;&#x5206;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;&#x6BD4;&#x5982;B&#x53EA;&#x9000;&#x51FA;&#x7684;chrome,safari&#x8FD8;&#x767B;&#x5F55;&#x7740;&#xFF0C;&#x6E05;&#x7406;&#x5728;&#x7EBF;&#x65F6;&#x5C31;&#x662F;&#x533A;&#x5206;&#x5BF9;&#x5F85;&#x4E86;</p>
+<h3 id="2-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">2.&#x6570;&#x636E;&#x7ED3;&#x6784;</h3>
+<p>&#x7528;redis&#x6765;&#x5B58;&#x50A8; &#x7528;&#x6237;id(uid),socketid(sid),channelid(cid)&#x4E4B;&#x524D;&#x7684;&#x5173;&#x7CFB;
+&#x89E3;&#x89E3;&#x91CA;&#x4E00;&#x4E0B;&#x8FD9;uid,cid&#x548C;sid</p>
+<blockquote>
+<p>uid:&#x767B;&#x9646;&#x7528;&#x6237;&#x7684;&#x552F;&#x4E00;id</p>
+<p>cid:&#x7528;&#x6237;&#x5728;safari&#x4E0A;&#x767B;&#x9646;&#x548C;&#x5728;chrome&#x4E0A;&#x767B;&#x9646;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#xFF0C;cid&#x7684;&#x503C;&#x53EF;&#x4EE5;&#x662F;sessionid,&#x56E0;&#x4E3A;&#x6BCF;&#x6B21;&#x767B;&#x5F55;&#x4EA7;&#x751F;&#x7684;sessionid&#x90FD;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x5176;&#x5B83;&#x6BD4;&#x5982; uid.microtime(true),&#x6B64;&#x6587;&#x6863;&#x7EA6;&#x5B9A;&#x5176;&#x683C;&#x5F0F;&#x4E3A;:33.1440575849.7297</p>
+<p>sid:socketid</p>
+</blockquote>
+<p>&#x6570;&#x7ED3;&#x7ED3;&#x6784;&#x793A;&#x8303;</p>
+<pre><code>smembers msg_uid:33
+1) &quot;33.1440577128.5168&quot;
+2) &quot;33.1440575849.7297&quot;
 
+
+smembers msg_cid:33.1440577128.5168
+1) &quot;307&quot;
+2) &quot;309&quot;
+
+smembers msg_cid:33.1440575849.7297
+1) &quot;305&quot;
+2) &quot;306&quot;
+</code></pre>
                     
                     </section>
                 
@@ -226,8 +251,8 @@
         </div>
 
         
+        <a href="./chapter2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: laravel5.1"><i class="fa fa-angle-left"></i></a>
         
-        <a href="./chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: gitosis安装使用"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
