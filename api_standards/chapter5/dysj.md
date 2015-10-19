@@ -4,8 +4,10 @@
 ##### 参考
 ```
 {
-    "code": "value",   //结果码，必需。客户端应首先根据此项结果进行相应处理。
-    "message":"value",
+    "meta":{
+        "code": "value",   //结果码，必需。客户端应首先根据此项结果进行相应处理。
+        "message":"value"
+    },
     "data": {
     }
 }
@@ -13,8 +15,10 @@
 ##### 示例
 ```
 {
-    "code": 200, 
-    "message":"success",
+    "meta":{
+        "code": 200, 
+        "message":"success"
+    },
     "data": {
          "id":3,
          "title":"每天五分钟，给思想加油",
@@ -29,8 +33,10 @@
 ```
 <?xml version="1.0" encoding="utf-8"?> 
 <result>
-    <code></code>
-    <message></message>
+    <meta>
+        <code></code>
+        <message></message>
+    </meta>
     <data>
         <id></id>
         <title></title>
@@ -44,8 +50,10 @@
 ```
 <?xml version="1.0" encoding="utf-8"?> 
 <result>
-    <code>200</code>
-    <message>success</message>
+    <meta>
+        <code>200</code>
+        <message>success</message>
+    </meta>
     <data>
         <id>3</id>
         <title>每天五分钟，给思想加油</title>

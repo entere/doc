@@ -4,8 +4,10 @@
 ##### 参考
 ```
 {
-    "code": "value",   //结果码，必需
-    "message": "value",
+    "meta": {
+        "code": "value",   //结果码，必需
+        "message": "value"
+    },
     "page": {    //分页参数，必需。
         "totalpage": "value", //总页数
         "count":"value",    //每页记录条数
@@ -20,8 +22,11 @@
 ##### 示例
 ```
 {
-    "code": 200, 
-    "message": "success",
+
+    "meta": {
+        "code": 200, 
+        "message": "success"
+    },
     "page": {    //分页参数，必需。
         "totalpage": "10", //总页数
         "count":"20",    //每页记录条数
@@ -48,8 +53,10 @@
 ```
 <?xml version="1.0" encoding="utf-8"?> 
 <result>
-    <code></code>
-    <message></message>
+    <meta>
+        <code></code>
+        <message></message>
+    </meta>
     <page>
         <totalpage></totalpage>
         <count></count>
@@ -77,8 +84,10 @@
 ```
 <?xml version="1.0" encoding="utf-8"?> 
 <result>
-    <code>200</code>
-    <message>success</message>
+    <meta>
+        <code>200</code>
+        <message>success</message>
+    </meta>
     <page>
         <totalpage>10</totalpage>
         <count>20</count>
@@ -91,7 +100,7 @@
             <title>每天五分钟，给思想加油</title>
             <content>博客中国是中国博客的发源地，自媒体意见领袖在根据地</content>
             <created_at>Fri Aug 22 00:00:00 +0800 2014</created_at>
-        </data
+        </data>
         <data>
             <id>2</id>
             <title>胡适“回家”干什么</title>

@@ -4,8 +4,10 @@
 ##### 参考
 ```
 {
-    "code": "value",   //结果码，必需
-    "message": "value",
+    "meta": {
+        "code": "value",   //结果码，必需
+        "message": "value"
+    },
     "data": [{
     },{
     }]
@@ -14,8 +16,10 @@
 ##### 示例
 ```
 {
-    "code": 200, 
-    "message": "success",
+    "meta": {
+        "code": 200, 
+        "message": "success"
+    },
     "data": [{
         "id":1,
         "title":"每天五分钟，给思想加油",
@@ -36,8 +40,10 @@
 ```
 <?xml version="1.0" encoding="utf-8"?> 
 <result>
-    <code></code>
-    <message></message>
+    <meta>
+        <code></code>
+        <message></message>
+    </meta>
     <data>
         <data>
             <id></id>
@@ -59,8 +65,10 @@
 ```
 <?xml version="1.0" encoding="utf-8"?> 
 <result>
-    <code>200</code>
-    <message>success</message>
+    <meta>
+        <code>200</code>
+        <message>success</message>
+    </meta>
     <data>
         <data>
             <id>1</id>

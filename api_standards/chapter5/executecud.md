@@ -6,8 +6,10 @@
 ##### 参考
 ```
 {
-    "code": "value",   //结果码，必需。客户端应首先根据此项结果进行相应处理。
-    "message":""
+    "meta":{
+        "code": "value",   //结果码，必需。客户端应首先根据此项结果进行相应处理。
+        "message":""
+    },
     "data": {
     }
 }
@@ -19,8 +21,10 @@
 ```
 <?xml version="1.0" encoding="utf-8"?> 
 <result>
-    <code></code>
-    <message></message>
+    <meta>
+        <code></code>
+        <message></message>
+    </meta>
     <data></data>
 </result>
 ```
