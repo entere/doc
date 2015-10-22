@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="5.3" data-basepath=".." data-revision="Tue Aug 18 2015 17:54:55 GMT+0800 (CST)">
+    <div class="book" data-level="5.3" data-basepath=".." data-revision="Thu Oct 22 2015 10:10:46 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -382,8 +382,10 @@
 <h3 id="json">JSON</h3>
 <h5 id="%E5%8F%82%E8%80%83">&#x53C2;&#x8003;</h5>
 <pre><code>{
-    &quot;code&quot;: &quot;value&quot;,   //&#x7ED3;&#x679C;&#x7801;&#xFF0C;&#x5FC5;&#x9700;
-    &quot;message&quot;: &quot;value&quot;,
+    &quot;meta&quot;: {
+        &quot;code&quot;: &quot;value&quot;,   //&#x7ED3;&#x679C;&#x7801;&#xFF0C;&#x5FC5;&#x9700;
+        &quot;message&quot;: &quot;value&quot;
+    },
     &quot;page&quot;: {    //&#x5206;&#x9875;&#x53C2;&#x6570;&#xFF0C;&#x5FC5;&#x9700;&#x3002;
         &quot;totalpage&quot;: &quot;value&quot;, //&#x603B;&#x9875;&#x6570;
         &quot;count&quot;:&quot;value&quot;,    //&#x6BCF;&#x9875;&#x8BB0;&#x5F55;&#x6761;&#x6570;
@@ -396,8 +398,11 @@
 }
 </code></pre><h5 id="%E7%A4%BA%E4%BE%8B">&#x793A;&#x4F8B;</h5>
 <pre><code>{
-    &quot;code&quot;: 200, 
-    &quot;message&quot;: &quot;success&quot;,
+
+    &quot;meta&quot;: {
+        &quot;code&quot;: 200, 
+        &quot;message&quot;: &quot;success&quot;
+    },
     &quot;page&quot;: {    //&#x5206;&#x9875;&#x53C2;&#x6570;&#xFF0C;&#x5FC5;&#x9700;&#x3002;
         &quot;totalpage&quot;: &quot;10&quot;, //&#x603B;&#x9875;&#x6570;
         &quot;count&quot;:&quot;20&quot;,    //&#x6BCF;&#x9875;&#x8BB0;&#x5F55;&#x6761;&#x6570;
@@ -421,8 +426,10 @@
 <h5 id="%E5%8F%82%E8%80%83">&#x53C2;&#x8003;</h5>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; 
 &lt;result&gt;
-    &lt;code&gt;&lt;/code&gt;
-    &lt;message&gt;&lt;/message&gt;
+    &lt;meta&gt;
+        &lt;code&gt;&lt;/code&gt;
+        &lt;message&gt;&lt;/message&gt;
+    &lt;/meta&gt;
     &lt;page&gt;
         &lt;totalpage&gt;&lt;/totalpage&gt;
         &lt;count&gt;&lt;/count&gt;
@@ -447,8 +454,10 @@
 </code></pre><h5 id="%E7%A4%BA%E4%BE%8B">&#x793A;&#x4F8B;</h5>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; 
 &lt;result&gt;
-    &lt;code&gt;200&lt;/code&gt;
-    &lt;message&gt;success&lt;/message&gt;
+    &lt;meta&gt;
+        &lt;code&gt;200&lt;/code&gt;
+        &lt;message&gt;success&lt;/message&gt;
+    &lt;/meta&gt;
     &lt;page&gt;
         &lt;totalpage&gt;10&lt;/totalpage&gt;
         &lt;count&gt;20&lt;/count&gt;
@@ -461,7 +470,7 @@
             &lt;title&gt;&#x6BCF;&#x5929;&#x4E94;&#x5206;&#x949F;&#xFF0C;&#x7ED9;&#x601D;&#x60F3;&#x52A0;&#x6CB9;&lt;/title&gt;
             &lt;content&gt;&#x535A;&#x5BA2;&#x4E2D;&#x56FD;&#x662F;&#x4E2D;&#x56FD;&#x535A;&#x5BA2;&#x7684;&#x53D1;&#x6E90;&#x5730;&#xFF0C;&#x81EA;&#x5A92;&#x4F53;&#x610F;&#x89C1;&#x9886;&#x8896;&#x5728;&#x6839;&#x636E;&#x5730;&lt;/content&gt;
             &lt;created_at&gt;Fri Aug 22 00:00:00 +0800 2014&lt;/created_at&gt;
-        &lt;/data
+        &lt;/data&gt;
         &lt;data&gt;
             &lt;id&gt;2&lt;/id&gt;
             &lt;title&gt;&#x80E1;&#x9002;&#x201C;&#x56DE;&#x5BB6;&#x201D;&#x5E72;&#x4EC0;&#x4E48;&lt;/title&gt;
