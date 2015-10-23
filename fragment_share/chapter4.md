@@ -1,25 +1,25 @@
 # 第三方登录流程
 
 ### 1.概述
-数据库设计时users_bind表专门用来存放与第三方帐户的绑定，其实这个表的核心字段就是两个，一个是我们网站的用户id(uid)，一个是用户在第三方网站的id(openid)
+数据库设计时`users_bind`表专门用来存放与第三方帐户的绑定，其实这个表的核心字段就是两个，一个是我们网站的用户`id(uid)`，一个是用户在第三方网站的`id(openid)`
 
-users
+users collection
 
 ```
 uid:5    name:fxd   password:****   avatar:fxd.png
 ```
-users_bind
+users_bind collection
 
 ```
 openid:234567    u_id:5     platform:weibo      access_token:***
 ```
-这样用户在用第三方帐号登录时，我们用oauth接口取到用户在第三方网站上的id(openid)，然后再从这个表中检索，这个id是否对应有我们网站的id(u_id)
+这样用户在用第三方帐号登录时，我们用`oauth`接口取到用户在第三方网站上的`id(openid)`，然后再从这个表中检索，这个`id`是否对应有我们网站的`id(u_id)`
 
-如果有，那么就登录这个id(uid)的用户。
+如果有，那么就登录这个`id(uid)`的用户。
 
 如果没有，那么为它注册一个新用户，并在绑定表中生成一条绑定纪录，以便下次登录查询。
 
-用户要解除绑定就只需要把绑定纪录从绑定表（users_bind）中删除就行了。
+用户要解除绑定就只需要把绑定纪录从绑定表`users_bind`中删除就行了。
 
 ### 2.数据结构
 users collection
@@ -94,7 +94,11 @@ users_bind collection
 
 ### 3.登录流程
 
-见流程图
+流程图
+
+![v5_uc_platform_login](images/v5_uc_platform_login.png)
+
+
         
 
 
