@@ -28,7 +28,7 @@ users collection
 {
     "uid":"34567876",
     "name" : "fxd",
-    "nick":"方兴东",
+    "nickname":"方兴东",
     "email": "fxd@blogchina.com",
     "password": "ejfiqejadkefk3fjakefelfalfjelkfaekfjelfk",
     "salt":"kefaeg",//加盐
@@ -88,7 +88,8 @@ users_bind collection
     "openid":"23456",
     "u_id":"1",
     "platform":"weibo",
-    "access_token":"***"
+    "nickname":"fxd"
+    "token":"***"
 }
 ```
 
