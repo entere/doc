@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>第三方登录流程 | Introduction</title>
+        <title>登录 | Introduction</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -25,10 +25,10 @@
         
     
     
-    <link rel="next" href="./chapter5.html" />
+    <link rel="next" href="./chapter2.html" />
     
     
-    <link rel="prev" href="./chapter3.html" />
+    <link rel="prev" href="./index.html" />
     
 
         
@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="4" data-basepath="." data-revision="Fri Nov 06 2015 18:09:41 GMT+0800 (CST)">
+    <div class="book" data-level="1" data-basepath="." data-revision="Fri Nov 06 2015 18:35:18 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -66,7 +66,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1" data-path="chapter1.html">
+        <li class="chapter active" data-level="1" data-path="chapter1.html">
             
                 
                     <a href="./chapter1.html">
@@ -75,7 +75,7 @@
                         
                             <b>1.</b>
                         
-                        gitosis安装使用
+                        登录
                     </a>
             
             
@@ -90,7 +90,7 @@
                         
                             <b>2.</b>
                         
-                        laravel5.1
+                        设置
                     </a>
             
             
@@ -105,37 +105,7 @@
                         
                             <b>3.</b>
                         
-                        消息通知流程
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter active" data-level="4" data-path="chapter4.html">
-            
-                
-                    <a href="./chapter4.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.</b>
-                        
-                        第三方登录流程
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="5" data-path="chapter5.html">
-            
-                
-                    <a href="./chapter5.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>5.</b>
-                        
-                        用户中心接口文档v5
+                        用户
                     </a>
             
             
@@ -246,86 +216,57 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="%E7%AC%AC%E4%B8%89%E6%96%B9%E7%99%BB%E5%BD%95%E6%B5%81%E7%A8%8B">&#x7B2C;&#x4E09;&#x65B9;&#x767B;&#x5F55;&#x6D41;&#x7A0B;</h1>
-<h3 id="1-%E6%A6%82%E8%BF%B0">1.&#x6982;&#x8FF0;</h3>
-<p>&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;&#x65F6;<code>users_bind</code>&#x8868;&#x4E13;&#x95E8;&#x7528;&#x6765;&#x5B58;&#x653E;&#x4E0E;&#x7B2C;&#x4E09;&#x65B9;&#x5E10;&#x6237;&#x7684;&#x7ED1;&#x5B9A;&#xFF0C;&#x5176;&#x5B9E;&#x8FD9;&#x4E2A;&#x8868;&#x7684;&#x6838;&#x5FC3;&#x5B57;&#x6BB5;&#x5C31;&#x662F;&#x4E24;&#x4E2A;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x6211;&#x4EEC;&#x7F51;&#x7AD9;&#x7684;&#x7528;&#x6237;<code>id(uid)</code>&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x7528;&#x6237;&#x5728;&#x7B2C;&#x4E09;&#x65B9;&#x7F51;&#x7AD9;&#x7684;<code>id(openid)</code></p>
-<p>users collection</p>
-<pre><code>uid:5    name:fxd   password:****   avatar:fxd.png
-</code></pre><p>users_bind collection</p>
-<pre><code>openid:234567    u_id:5     platform:weibo      access_token:***
-</code></pre><p>&#x8FD9;&#x6837;&#x7528;&#x6237;&#x5728;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x5E10;&#x53F7;&#x767B;&#x5F55;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x7528;<code>oauth</code>&#x63A5;&#x53E3;&#x53D6;&#x5230;&#x7528;&#x6237;&#x5728;&#x7B2C;&#x4E09;&#x65B9;&#x7F51;&#x7AD9;&#x4E0A;&#x7684;<code>id(openid)</code>&#xFF0C;&#x7136;&#x540E;&#x518D;&#x4ECE;&#x8FD9;&#x4E2A;&#x8868;&#x4E2D;&#x68C0;&#x7D22;&#xFF0C;&#x8FD9;&#x4E2A;<code>id</code>&#x662F;&#x5426;&#x5BF9;&#x5E94;&#x6709;&#x6211;&#x4EEC;&#x7F51;&#x7AD9;&#x7684;<code>id(u_id)</code></p>
-<p>&#x5982;&#x679C;&#x6709;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x767B;&#x5F55;&#x8FD9;&#x4E2A;<code>id(uid)</code>&#x7684;&#x7528;&#x6237;&#x3002;</p>
-<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#xFF0C;&#x90A3;&#x4E48;&#x4E3A;&#x5B83;&#x6CE8;&#x518C;&#x4E00;&#x4E2A;&#x65B0;&#x7528;&#x6237;&#xFF0C;&#x5E76;&#x5728;&#x7ED1;&#x5B9A;&#x8868;&#x4E2D;&#x751F;&#x6210;&#x4E00;&#x6761;&#x7ED1;&#x5B9A;&#x7EAA;&#x5F55;&#xFF0C;&#x4EE5;&#x4FBF;&#x4E0B;&#x6B21;&#x767B;&#x5F55;&#x67E5;&#x8BE2;&#x3002;</p>
-<p>&#x7528;&#x6237;&#x8981;&#x89E3;&#x9664;&#x7ED1;&#x5B9A;&#x5C31;&#x53EA;&#x9700;&#x8981;&#x628A;&#x7ED1;&#x5B9A;&#x7EAA;&#x5F55;&#x4ECE;&#x7ED1;&#x5B9A;&#x8868;<code>users_bind</code>&#x4E2D;&#x5220;&#x9664;&#x5C31;&#x884C;&#x4E86;&#x3002;</p>
-<h3 id="2-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">2.&#x6570;&#x636E;&#x7ED3;&#x6784;</h3>
-<p>users collection</p>
+                        <h1 id="1-%E7%99%BB%E5%BD%95">1.&#x767B;&#x5F55;</h1>
+<h3 id="1-1-%E7%99%BB%E5%BD%95">1.1 &#x767B;&#x5F55;</h3>
+<ul>
+<li><p>URL&#xFF1A;/sign/in </p>
+</li>
+<li><p>HTTP&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#xFF1A;POST</p>
+</li>
+<li><p>&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#xFF1A;</p>
+</li>
+</ul>
 <pre><code>{
-    &quot;uid&quot;:&quot;34567876&quot;,
-    &quot;name&quot; : &quot;fxd&quot;,
-    &quot;nickname&quot;:&quot;&#x65B9;&#x5174;&#x4E1C;&quot;,
-    &quot;email&quot;: &quot;fxd@blogchina.com&quot;,
-    &quot;password&quot;: &quot;ejfiqejadkefk3fjakefelfalfjelkfaekfjelfk&quot;,
-    &quot;salt&quot;:&quot;kefaeg&quot;,//&#x52A0;&#x76D0;
-
-    &quot;mobile&quot;:&quot;13810895860&quot;,
-    &quot;description&quot;:&quot;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x6211;&quot;,
-    &quot;avatar&quot;:&quot;fxdd.png&quot;,
-    &quot;gender&quot;:&quot;m&quot;,/m or f or n
-    &quot;birthday&quot;:&quot;1970-10-24&quot;,
-
-    &quot;register_time&quot;:&quot;1447653289&quot;,//&#x6CE8;&#x518C;&#x65F6;&#x95F4;
-    &quot;register_ip&quot;:&quot;127.0.0.1&quot;,
-    &quot;last_login_time&quot;:&quot;1443567834&quot;,
-    &quot;last_login_ip&quot;:&quot;192.168.0.1&quot;,
-
-    &quot;is_valid_email&quot;:&quot;Y&quot;,//Y or N
-    &quot;is_valid_mobile&quot;:&quot;Y&quot;,
-
-    &quot;allow_comment&quot;:&quot;Y&quot;,//Y or N
-
-    //&#x7528;&#x6237;&#x7EC4;
-    &quot;group&quot;:{
-        &quot;id&quot;:1,
-        &quot;name&quot;:&quot;&#x533F;&#x540D;&#x4F1A;&#x5458;&quot;,
-        &quot;permission&quot;:{
-
-        }
+    &quot;accout&quot;: &quot;entere@126.com&quot;, 
+    &quot;password&quot;: &quot;111111&quot;,  
+}
+</code></pre><ul>
+<li>&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF1A;</li>
+</ul>
+<pre><code>{
+    &quot;meta&quot;:{
+        &quot;code&quot;: &quot;200&quot;,   //&#x7ED3;&#x679C;&#x7801;&#xFF0C;&#x5FC5;&#x9700;&#x3002;&#x5BA2;&#x6237;&#x7AEF;&#x5E94;&#x9996;&#x5148;&#x6839;&#x636E;&#x6B64;&#x9879;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x5904;&#x7406;&#x3002;
+        &quot;message&quot;:&quot;login success&quot;
     },
-
-    &quot;reg_from&quot;:&quot;weibo&quot;,
-
-    &quot;numbers&quot;:{
-        &quot;followers&quot;:&quot;20&quot;,//&#x7C89;&#x4E1D;&#x6570;&#xFF0C;
-        &quot;friends&quot;:&quot;56&quot;,//&#x5173;&#x6CE8;&#x6570;
-        &quot;blog&quot;:&quot;4&quot;
-    },
-
-    &quot;settings&quot;:{
-        &quot;letter&quot;:{
-
-        }
-    }
-
-    //&#x76D1;&#x7BA1;&#x5BA1;&#x67E5;&#x72B6;&#x6001;
-    &quot;review&quot;:{
-        &quot;is_pass&quot;:&quot;Y&quot;,
-        &quot;is_del&quot;:&quot;Y&quot;,
-        &quot;is_lock&quot;:&quot;N&quot;
+    &quot;data&quot;: {
+        &quot;token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOjE0NDY4MDI0MjcsImV4cCI6MTQ0NjgwNjI1NSwiaWF0IjoxNDQ2ODA1NjU1LCJqdGkiOiIxNDQ2ODA1NjU1MzEwNSIsImRhdGEiOnsidWlkIjoxNDQ2ODAyNDI3fX0.qQC-Dom8_HVXGnX8ZqltGoZaSaZmX9NHFGmBE9dDjUk&quot;
     }
 
 }
-</code></pre><p>users_bind collection</p>
+</code></pre><h3 id="1-2-%E9%80%80%E5%87%BA">1.2 &#x9000;&#x51FA;</h3>
+<ul>
+<li><p>URL&#xFF1A;/sign/out</p>
+</li>
+<li><p>HTTP&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#xFF1A;GET</p>
+</li>
+<li><p>&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#xFF1A;</p>
+</li>
+</ul>
 <pre><code>{
-    &quot;openid&quot;:&quot;23456&quot;,
-    &quot;u_id&quot;:&quot;1&quot;,
-    &quot;platform&quot;:&quot;weibo&quot;,
-    &quot;nickname&quot;:&quot;fxd&quot;
-    &quot;token&quot;:&quot;***&quot;
-}
-</code></pre><h3 id="3-%E7%99%BB%E5%BD%95%E6%B5%81%E7%A8%8B">3.&#x767B;&#x5F55;&#x6D41;&#x7A0B;</h3>
-<p>&#x6D41;&#x7A0B;&#x56FE;</p>
-<p><img src="images/v5_uc_platform_login.png" alt="v5_uc_platform_login"></p>
+    &quot;token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOjE0NDY4MDI0MjcsImV4cCI6MTQ0NjgwNjI1NSwiaWF0IjoxNDQ2ODA1NjU1LCJqdGkiOiIxNDQ2ODA1NjU1MzEwNSIsImRhdGEiOnsidWlkIjoxNDQ2ODAyNDI3fX0.qQC-Dom8_HVXGnX8ZqltGoZaSaZmX9NHFGmBE9dDjUk&quot;, 
 
+}
+</code></pre><ul>
+<li>&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF1A;</li>
+</ul>
+<pre><code>{
+    &quot;meta&quot;:{
+        &quot;code&quot;: &quot;200&quot;,   //&#x7ED3;&#x679C;&#x7801;&#xFF0C;&#x5FC5;&#x9700;&#x3002;&#x5BA2;&#x6237;&#x7AEF;&#x5E94;&#x9996;&#x5148;&#x6839;&#x636E;&#x6B64;&#x9879;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x5904;&#x7406;&#x3002;
+        &quot;message&quot;:&quot;logout success&quot;
+    }
+
+}
+</code></pre>
                     
                     </section>
                 
@@ -335,10 +276,10 @@
         </div>
 
         
-        <a href="./chapter3.html" class="navigation navigation-prev " aria-label="Previous page: 消息通知流程"><i class="fa fa-angle-left"></i></a>
+        <a href="./index.html" class="navigation navigation-prev " aria-label="Previous page: Introduction"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="./chapter5.html" class="navigation navigation-next " aria-label="Next page: 用户中心接口文档v5"><i class="fa fa-angle-right"></i></a>
+        <a href="./chapter2.html" class="navigation navigation-next " aria-label="Next page: 设置"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
