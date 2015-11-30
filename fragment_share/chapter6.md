@@ -6,15 +6,15 @@ fatal: destination path '.' already exists and is not an empty directory.
 
 ### 2.解决
 
-> * 1. 进入非空目录，假设是 /v5_uc
+> * 进入非空目录，假设是 /v5_uc
 
-> * 2. git clone -b bate1 --no-checkout http://gitlab.blogcore.cn/v5/v5_uc.git tmp
+> * git clone -b bate1 --no-checkout http://gitlab.blogcore.cn/v5/v5_uc.git tmp
 
-> * 3. mv tmp/.git .   #将 tmp 目录下的 .git 目录移到当前目录
+> * mv tmp/.git .   #将 tmp 目录下的 .git 目录移到当前目录
 
-> * 4. rmdir tmp
+> * rmdir tmp
 
-> * 5. git reset --hard HEAD
+> * git reset --hard HEAD
 
 然后就可以进行各种正常操作了。
 
