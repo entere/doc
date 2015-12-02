@@ -3,9 +3,9 @@
 ### 1.概述
 最终做到的效果就是，每当有新的 commit push 到 master 分支的时候，就自动在测试/生产服务器上进行 git pull 拉取最新的代码，免去了程序猿兼职运维 ssh 上去拉代码部署的重复性工作。
 
-### 2.github后台创建接收通知的url
+### 2.github后台创建接收通知的url,每当有 push 的时候就自动调用这个脚本。
 以v5_uc为例：
-You Projects->v5/v5_uc->Settings->Web hooks中的url中添加url
+You Projects->v5/v5_uc->Settings->Web hooks中的url中添加url:
 
 http://uc5.blogcore.cn/some_shell/gitlab/hook.php?token=xxxxx
 
@@ -47,13 +47,15 @@ exec("./gitpull.sh");
 ```
 
 
-### 3.编写gitpull.sh代码
+### 4.编写gitpull.sh代码
 
 ```bash
 cd /opt/html2/v5/v5_uc
 git checkout bate1
 git pull
 ```
+
+### 5.测试
 
 
         
