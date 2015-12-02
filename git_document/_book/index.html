@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>git:解决本地多个ssh-key的问题 | Introduction</title>
+        <title>Introduction | Introduction</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="">
+        <meta name="description" content="记录git 使用过程的一些知识，备忘～">
         <meta name="generator" content="GitBook 2.2.0">
         
         
@@ -25,10 +25,8 @@
         
     
     
-    <link rel="next" href="./chapter6.html" />
+    <link rel="next" href="./chapter1.html" />
     
-    
-    <link rel="prev" href="./chapter4.html" />
     
 
         
@@ -36,7 +34,7 @@
     <body>
         
         
-    <div class="book" data-level="5" data-basepath="." data-revision="Mon Nov 30 2015 12:37:22 GMT+0800 (CST)">
+    <div class="book" data-level="0" data-basepath="." data-revision="Wed Dec 02 2015 16:07:34 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -53,7 +51,7 @@
 
         
     
-        <li class="chapter " data-level="0" data-path="index.html">
+        <li class="chapter active" data-level="0" data-path="index.html">
             
                 
                     <a href="./index.html">
@@ -75,7 +73,7 @@
                         
                             <b>1.</b>
                         
-                        gitosis安装使用
+                        gitosis:安装使用
                     </a>
             
             
@@ -90,7 +88,7 @@
                         
                             <b>2.</b>
                         
-                        laravel5.1
+                        git:解决本地多个ssh-key的问题
                     </a>
             
             
@@ -105,7 +103,7 @@
                         
                             <b>3.</b>
                         
-                        消息通知流程
+                        git:clone项目到一个非空目录
                     </a>
             
             
@@ -120,37 +118,7 @@
                         
                             <b>4.</b>
                         
-                        第三方登录流程
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter active" data-level="5" data-path="chapter5.html">
-            
-                
-                    <a href="./chapter5.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>5.</b>
-                        
-                        git:解决本地多个ssh-key的问题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6" data-path="chapter6.html">
-            
-                
-                    <a href="./chapter6.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.</b>
-                        
-                        git:clone项目到一个非空目录
+                        git:自动化部署（webhooks）
                     </a>
             
             
@@ -261,28 +229,8 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="git-%E8%A7%A3%E5%86%B3%E6%9C%AC%E5%9C%B0%E5%A4%9A%E4%B8%AAssh-key%E7%9A%84%E9%97%AE%E9%A2%98">git:&#x89E3;&#x51B3;&#x672C;&#x5730;&#x591A;&#x4E2A;ssh-key&#x7684;&#x95EE;&#x9898;</h1>
-<h3 id="1-%E6%A6%82%E8%BF%B0">1.&#x6982;&#x8FF0;</h3>
-<p>&#x5728;&#x7528;git&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x6709;&#x8FD9;&#x6837;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x8981;&#x7528;github&#xFF0C;&#x8FD8;&#x8981;&#x7528;gitlab,&#x6216;&#x8005;github&#x4E0A;&#x591A;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x8D26;&#x53F7;&#xFF0C;&#x8FD9;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x672C;&#x673A;&#x5C31;&#x9700;&#x8981;&#x751F;&#x6210;&#x4E0D;&#x540C;&#x7684;id_ras&#x6587;&#x4EF6;&#x3002;github&#x5B98;&#x65B9;&#x7684;&#x8BF4;&#x660E;&#x6587;&#x6863;&#x8981;&#x6C42;&#x5907;&#x4EFD;&#x5F53;&#x524D;&#x7684;id_rsa&#xFF0C;&#x7136;&#x540E;&#x751F;&#x6210;&#x4E00;&#x4EFD;&#x65B0;&#x7684;&#x79C1;&#x94A5;&#x7528;&#x4E8E;github&#x7684;&#x767B;&#x9646;&#x3002;&#x5982;&#x679C;&#x771F;&#x8FD9;&#x6837;&#x505A;&#xFF0C;&#x90A3;&#x4E48;&#x65B0;&#x7684;&#x79C1;&#x94A5;&#x662F;&#x65E0;&#x6CD5;&#x518D;&#x7EE7;&#x7EED;&#x767B;&#x9646;&#x4E4B;&#x524D;&#x7684;&#x673A;&#x5668;&#x7684;&#x3002;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x6709;&#x70B9;&#x66B4;&#x529B;&#x2026;
-&#x8FD8;&#x597D;ssh&#x53EF;&#x4EE5;&#x8BA9;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4E0D;&#x540C;&#x7684;&#x79C1;&#x94A5;&#x6765;&#x767B;&#x9646;&#x4E0D;&#x540C;&#x7684;&#x57DF;&#x3002;</p>
-<h3 id="2-%E9%A6%96%E5%85%88%EF%BC%8C%E5%9C%A8%E6%96%B0%E5%A2%9E%E7%A7%81%E9%92%A5%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E9%80%9A%E8%BF%87%E6%8C%87%E5%AE%9A%E4%B8%8D%E5%90%8C%E7%9A%84%E6%96%87%E4%BB%B6%E5%90%8D%E6%9D%A5%E7%94%9F%E6%88%90%E4%B8%8D%E5%90%8C%E7%9A%84%E7%A7%81%E9%92%A5%E6%96%87%E4%BB%B6">2.&#x9996;&#x5148;&#xFF0C;&#x5728;&#x65B0;&#x589E;&#x79C1;&#x94A5;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x901A;&#x8FC7;&#x6307;&#x5B9A;&#x4E0D;&#x540C;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x6765;&#x751F;&#x6210;&#x4E0D;&#x540C;&#x7684;&#x79C1;&#x94A5;&#x6587;&#x4EF6;</h3>
-<pre><code>ssh-keygen -t rsa -f ~/.ssh/id_rsa.gitlab -C &quot;zhanghao@blogchina.com&quot;
-
-ssh-keygen -t rsa -f ~/.ssh/id_rsa.github -C &quot;entere@126.com&quot;
-</code></pre><h3 id="3-%E7%84%B6%E5%90%8E%EF%BC%8C%E6%96%B0%E5%A2%9Essh%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%EF%BC%8C%E5%B9%B6%E4%BF%AE%E6%94%B9%E6%9D%83%E9%99%90">3.&#x7136;&#x540E;&#xFF0C;&#x65B0;&#x589E;ssh&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x4FEE;&#x6539;&#x6743;&#x9650;</h3>
-<pre><code>touch ~/.ssh/config
-
-chmod 600 ~/.ssh/config
-</code></pre><p>&#x4FEE;&#x6539;config&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#xFF1A;</p>
-<pre><code>Host github.com
-    IdentityFile ~/.ssh/id_rsa.github
-    User git
-
-Host gitlab.blogcore.cn
-    IdentityFile ~/.ssh/id_rsa.gitlab
-    User git
-    RSAAuthentication yes
-</code></pre><p>&#x8FD9;&#x6837;&#x5728;&#x767B;&#x9646;&#x7684;&#x65F6;&#x5019;&#xFF0C;ssh&#x4F1A;&#x6839;&#x636E;&#x767B;&#x9646;&#x4E0D;&#x540C;&#x7684;&#x57DF;&#x6765;&#x8BFB;&#x53D6;&#x76F8;&#x5E94;&#x7684;&#x79C1;&#x94A5;&#x6587;&#x4EF6;</p>
+                        <h1 id="introduction">Introduction</h1>
+<p>&#x8BB0;&#x5F55;git &#x4F7F;&#x7528;&#x8FC7;&#x7A0B;&#x7684;&#x4E00;&#x4E9B;&#x77E5;&#x8BC6;&#xFF0C;&#x5907;&#x5FD8;&#xFF5E;</p>
 
                     
                     </section>
@@ -293,10 +241,8 @@ Host gitlab.blogcore.cn
         </div>
 
         
-        <a href="./chapter4.html" class="navigation navigation-prev " aria-label="Previous page: 第三方登录流程"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="./chapter6.html" class="navigation navigation-next " aria-label="Next page: git:clone项目到一个非空目录"><i class="fa fa-angle-right"></i></a>
+        <a href="./chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: gitosis:安装使用"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

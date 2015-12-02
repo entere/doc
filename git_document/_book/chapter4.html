@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>第三方登录流程 | Introduction</title>
+        <title>git:自动化部署（webhooks） | Introduction</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -25,8 +25,6 @@
         
     
     
-    <link rel="next" href="./chapter5.html" />
-    
     
     <link rel="prev" href="./chapter3.html" />
     
@@ -36,7 +34,7 @@
     <body>
         
         
-    <div class="book" data-level="4" data-basepath="." data-revision="Mon Nov 30 2015 12:37:22 GMT+0800 (CST)">
+    <div class="book" data-level="4" data-basepath="." data-revision="Wed Dec 02 2015 16:07:34 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -75,7 +73,7 @@
                         
                             <b>1.</b>
                         
-                        gitosis安装使用
+                        gitosis:安装使用
                     </a>
             
             
@@ -90,7 +88,7 @@
                         
                             <b>2.</b>
                         
-                        laravel5.1
+                        git:解决本地多个ssh-key的问题
                     </a>
             
             
@@ -105,7 +103,7 @@
                         
                             <b>3.</b>
                         
-                        消息通知流程
+                        git:clone项目到一个非空目录
                     </a>
             
             
@@ -120,37 +118,7 @@
                         
                             <b>4.</b>
                         
-                        第三方登录流程
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="5" data-path="chapter5.html">
-            
-                
-                    <a href="./chapter5.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>5.</b>
-                        
-                        git:解决本地多个ssh-key的问题
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6" data-path="chapter6.html">
-            
-                
-                    <a href="./chapter6.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.</b>
-                        
-                        git:clone项目到一个非空目录
+                        git:自动化部署（webhooks）
                     </a>
             
             
@@ -261,85 +229,51 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="%E7%AC%AC%E4%B8%89%E6%96%B9%E7%99%BB%E5%BD%95%E6%B5%81%E7%A8%8B">&#x7B2C;&#x4E09;&#x65B9;&#x767B;&#x5F55;&#x6D41;&#x7A0B;</h1>
+                        <h1 id="git-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%EF%BC%88webhooks%EF%BC%89">git:&#x81EA;&#x52A8;&#x5316;&#x90E8;&#x7F72;&#xFF08;webhooks&#xFF09;</h1>
 <h3 id="1-%E6%A6%82%E8%BF%B0">1.&#x6982;&#x8FF0;</h3>
-<p>&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;&#x65F6;<code>users_bind</code>&#x8868;&#x4E13;&#x95E8;&#x7528;&#x6765;&#x5B58;&#x653E;&#x4E0E;&#x7B2C;&#x4E09;&#x65B9;&#x5E10;&#x6237;&#x7684;&#x7ED1;&#x5B9A;&#xFF0C;&#x5176;&#x5B9E;&#x8FD9;&#x4E2A;&#x8868;&#x7684;&#x6838;&#x5FC3;&#x5B57;&#x6BB5;&#x5C31;&#x662F;&#x4E24;&#x4E2A;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x6211;&#x4EEC;&#x7F51;&#x7AD9;&#x7684;&#x7528;&#x6237;<code>id(uid)</code>&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x7528;&#x6237;&#x5728;&#x7B2C;&#x4E09;&#x65B9;&#x7F51;&#x7AD9;&#x7684;<code>id(openid)</code></p>
-<p>users collection</p>
-<pre><code>uid:5    name:fxd   password:****   avatar:fxd.png
-</code></pre><p>users_bind collection</p>
-<pre><code>openid:234567    u_id:5     platform:weibo      access_token:***
-</code></pre><p>&#x8FD9;&#x6837;&#x7528;&#x6237;&#x5728;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x5E10;&#x53F7;&#x767B;&#x5F55;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x7528;<code>oauth</code>&#x63A5;&#x53E3;&#x53D6;&#x5230;&#x7528;&#x6237;&#x5728;&#x7B2C;&#x4E09;&#x65B9;&#x7F51;&#x7AD9;&#x4E0A;&#x7684;<code>id(openid)</code>&#xFF0C;&#x7136;&#x540E;&#x518D;&#x4ECE;&#x8FD9;&#x4E2A;&#x8868;&#x4E2D;&#x68C0;&#x7D22;&#xFF0C;&#x8FD9;&#x4E2A;<code>id</code>&#x662F;&#x5426;&#x5BF9;&#x5E94;&#x6709;&#x6211;&#x4EEC;&#x7F51;&#x7AD9;&#x7684;<code>id(u_id)</code></p>
-<p>&#x5982;&#x679C;&#x6709;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x767B;&#x5F55;&#x8FD9;&#x4E2A;<code>id(uid)</code>&#x7684;&#x7528;&#x6237;&#x3002;</p>
-<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#xFF0C;&#x90A3;&#x4E48;&#x4E3A;&#x5B83;&#x6CE8;&#x518C;&#x4E00;&#x4E2A;&#x65B0;&#x7528;&#x6237;&#xFF0C;&#x5E76;&#x5728;&#x7ED1;&#x5B9A;&#x8868;&#x4E2D;&#x751F;&#x6210;&#x4E00;&#x6761;&#x7ED1;&#x5B9A;&#x7EAA;&#x5F55;&#xFF0C;&#x4EE5;&#x4FBF;&#x4E0B;&#x6B21;&#x767B;&#x5F55;&#x67E5;&#x8BE2;&#x3002;</p>
-<p>&#x7528;&#x6237;&#x8981;&#x89E3;&#x9664;&#x7ED1;&#x5B9A;&#x5C31;&#x53EA;&#x9700;&#x8981;&#x628A;&#x7ED1;&#x5B9A;&#x7EAA;&#x5F55;&#x4ECE;&#x7ED1;&#x5B9A;&#x8868;<code>users_bind</code>&#x4E2D;&#x5220;&#x9664;&#x5C31;&#x884C;&#x4E86;&#x3002;</p>
-<h3 id="2-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">2.&#x6570;&#x636E;&#x7ED3;&#x6784;</h3>
-<p>users collection</p>
-<pre><code>{
-    &quot;uid&quot;:&quot;34567876&quot;,
-    &quot;name&quot; : &quot;fxd&quot;,
-    &quot;nickname&quot;:&quot;&#x65B9;&#x5174;&#x4E1C;&quot;,
-    &quot;email&quot;: &quot;fxd@blogchina.com&quot;,
-    &quot;password&quot;: &quot;ejfiqejadkefk3fjakefelfalfjelkfaekfjelfk&quot;,
-    &quot;salt&quot;:&quot;kefaeg&quot;,//&#x52A0;&#x76D0;
-
-    &quot;mobile&quot;:&quot;13810895860&quot;,
-    &quot;description&quot;:&quot;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x6211;&quot;,
-    &quot;avatar&quot;:&quot;fxdd.png&quot;,
-    &quot;gender&quot;:&quot;m&quot;,/m or f or n
-    &quot;birthday&quot;:&quot;1970-10-24&quot;,
-
-    &quot;register_time&quot;:&quot;1447653289&quot;,//&#x6CE8;&#x518C;&#x65F6;&#x95F4;
-    &quot;register_ip&quot;:&quot;127.0.0.1&quot;,
-    &quot;last_login_time&quot;:&quot;1443567834&quot;,
-    &quot;last_login_ip&quot;:&quot;192.168.0.1&quot;,
-
-    &quot;is_valid_email&quot;:&quot;Y&quot;,//Y or N
-    &quot;is_valid_mobile&quot;:&quot;Y&quot;,
-
-    &quot;allow_comment&quot;:&quot;Y&quot;,//Y or N
-
-    //&#x7528;&#x6237;&#x7EC4;
-    &quot;group&quot;:{
-        &quot;id&quot;:1,
-        &quot;name&quot;:&quot;&#x533F;&#x540D;&#x4F1A;&#x5458;&quot;,
-        &quot;permission&quot;:{
-
-        }
-    },
-
-    &quot;reg_from&quot;:&quot;weibo&quot;,
-
-    &quot;numbers&quot;:{
-        &quot;followers&quot;:&quot;20&quot;,//&#x7C89;&#x4E1D;&#x6570;&#xFF0C;
-        &quot;friends&quot;:&quot;56&quot;,//&#x5173;&#x6CE8;&#x6570;
-        &quot;blog&quot;:&quot;4&quot;
-    },
-
-    &quot;settings&quot;:{
-        &quot;letter&quot;:{
-
-        }
-    }
-
-    //&#x76D1;&#x7BA1;&#x5BA1;&#x67E5;&#x72B6;&#x6001;
-    &quot;review&quot;:{
-        &quot;is_pass&quot;:&quot;Y&quot;,
-        &quot;is_del&quot;:&quot;Y&quot;,
-        &quot;is_lock&quot;:&quot;N&quot;
-    }
-
+<p>&#x6700;&#x7EC8;&#x505A;&#x5230;&#x7684;&#x6548;&#x679C;&#x5C31;&#x662F;&#xFF0C;&#x6BCF;&#x5F53;&#x6709;&#x65B0;&#x7684; commit push &#x5230; master &#x5206;&#x652F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x81EA;&#x52A8;&#x5728;&#x6D4B;&#x8BD5;/&#x751F;&#x4EA7;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x8FDB;&#x884C; git pull &#x62C9;&#x53D6;&#x6700;&#x65B0;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x514D;&#x53BB;&#x4E86;&#x7A0B;&#x5E8F;&#x733F;&#x517C;&#x804C;&#x8FD0;&#x7EF4; ssh &#x4E0A;&#x53BB;&#x62C9;&#x4EE3;&#x7801;&#x90E8;&#x7F72;&#x7684;&#x91CD;&#x590D;&#x6027;&#x5DE5;&#x4F5C;&#x3002;</p>
+<h3 id="2-github%E5%90%8E%E5%8F%B0%E5%88%9B%E5%BB%BA%E6%8E%A5%E6%94%B6%E9%80%9A%E7%9F%A5%E7%9A%84url-%E6%AF%8F%E5%BD%93%E6%9C%89-push-%E7%9A%84%E6%97%B6%E5%80%99%E5%B0%B1%E8%87%AA%E5%8A%A8%E8%B0%83%E7%94%A8%E8%BF%99%E4%B8%AA%E8%84%9A%E6%9C%AC%E3%80%82">2.github&#x540E;&#x53F0;&#x521B;&#x5EFA;&#x63A5;&#x6536;&#x901A;&#x77E5;&#x7684;url,&#x6BCF;&#x5F53;&#x6709; push &#x7684;&#x65F6;&#x5019;&#x5C31;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x3002;</h3>
+<p>&#x4EE5;v5_uc&#x4E3A;&#x4F8B;&#xFF1A;
+You Projects-&gt;v5/v5_uc-&gt;Settings-&gt;Web hooks&#x4E2D;&#x7684;url&#x4E2D;&#x6DFB;&#x52A0;url:</p>
+<p><a href="http://uc5.blogcore.cn/some_shell/gitlab/hook.php?token=xxxxx" target="_blank">http://uc5.blogcore.cn/some_shell/gitlab/hook.php?token=xxxxx</a></p>
+<h3 id="3-%E7%BC%96%E5%86%99hook-php-%E4%BB%A3%E7%A0%81">3.&#x7F16;&#x5199;hook.php &#x4EE3;&#x7801;</h3>
+<p>hook.php&#x4E3B;&#x8981;&#x5B9E;&#x73B0;&#x8C03;&#x7528;git pull &#x547D;&#x4EE4;</p>
+<pre><code class="lang-php"><span class="hljs-preprocessor">&lt;?php</span>
+<span class="hljs-comment">// &#x4E3A;&#x4E86;&#x5B89;&#x5168;&#xFF0C;&#x4E0D;&#x8BA9;&#x5176;&#x5B83;&#x6709;&#x5411;&#x6B64;&#x63A5;&#x53E3;&#x63D0;&#x4EA4;&#x6570;&#x636E;&#x4F7F;&#x7528;</span>
+<span class="hljs-variable">$valid_token</span> = <span class="hljs-string">&apos;xxx&apos;</span>;
+<span class="hljs-variable">$valid_ip</span> = <span class="hljs-keyword">array</span>(<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-string">&apos;219.238.250.40&apos;</span>);
+<span class="hljs-variable">$client_token</span> = <span class="hljs-variable">$_GET</span>[<span class="hljs-string">&apos;token&apos;</span>];
+<span class="hljs-variable">$client_ip</span> = <span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">&apos;REMOTE_ADDR&apos;</span>];
+<span class="hljs-variable">$fs</span> = fopen(<span class="hljs-string">&apos;./logs/hook.log&apos;</span>, <span class="hljs-string">&apos;a&apos;</span>);
+fwrite(<span class="hljs-variable">$fs</span>, <span class="hljs-string">&apos;Request on [&apos;</span>.date(<span class="hljs-string">&quot;Y-m-d H:i:s&quot;</span>).<span class="hljs-string">&apos;] from [&apos;</span>.<span class="hljs-variable">$client_ip</span>.<span class="hljs-string">&apos;]&apos;</span>.PHP_EOL);
+<span class="hljs-comment">// &#x8A8D;&#x8B49; token</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$client_token</span> !== <span class="hljs-variable">$valid_token</span>)
+{
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;error 10001&quot;</span>;
+    fwrite(<span class="hljs-variable">$fs</span>, <span class="hljs-string">&quot;Invalid token [{$client_token}]&quot;</span>.PHP_EOL);
+    <span class="hljs-keyword">exit</span>(<span class="hljs-number">0</span>);
 }
-</code></pre><p>users_bind collection</p>
-<pre><code>{
-    &quot;openid&quot;:&quot;23456&quot;,
-    &quot;u_id&quot;:&quot;1&quot;,
-    &quot;platform&quot;:&quot;weibo&quot;,
-    &quot;nickname&quot;:&quot;fxd&quot;
-    &quot;token&quot;:&quot;***&quot;
+<span class="hljs-comment">// &#x4E3A;&#x4E86;&#x5B89;&#x5168;&#x8BA4;&#x8BC1; ip</span>
+<span class="hljs-keyword">if</span> ( ! in_array(<span class="hljs-variable">$client_ip</span>, <span class="hljs-variable">$valid_ip</span>))
+{
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;error 10002&quot;</span>;
+    fwrite(<span class="hljs-variable">$fs</span>, <span class="hljs-string">&quot;Invalid ip [{$client_ip}]&quot;</span>.PHP_EOL);
+    <span class="hljs-comment">//exit(0);</span>
 }
-</code></pre><h3 id="3-%E7%99%BB%E5%BD%95%E6%B5%81%E7%A8%8B">3.&#x767B;&#x5F55;&#x6D41;&#x7A0B;</h3>
-<p>&#x6D41;&#x7A0B;&#x56FE;</p>
-<p><img src="images/v5_uc_platform_login.png" alt="v5_uc_platform_login"></p>
+<span class="hljs-variable">$json</span> = file_get_contents(<span class="hljs-string">&apos;php://input&apos;</span>);
+<span class="hljs-variable">$data</span> = json_decode(<span class="hljs-variable">$json</span>, <span class="hljs-keyword">true</span>);
+fwrite(<span class="hljs-variable">$fs</span>, <span class="hljs-string">&apos;Data: &apos;</span>.print_r(<span class="hljs-variable">$data</span>, <span class="hljs-keyword">true</span>).PHP_EOL);
+fwrite(<span class="hljs-variable">$fs</span>, <span class="hljs-string">&apos;=======================================================================&apos;</span>.PHP_EOL);
+<span class="hljs-variable">$fs</span> <span class="hljs-keyword">and</span> fclose(<span class="hljs-variable">$fs</span>);
+
+exec(<span class="hljs-string">&quot;./gitpull.sh&quot;</span>);
+</code></pre>
+<h3 id="4-%E7%BC%96%E5%86%99gitpull-sh%E4%BB%A3%E7%A0%81">4.&#x7F16;&#x5199;gitpull.sh&#x4EE3;&#x7801;</h3>
+<pre><code class="lang-bash"><span class="hljs-built_in">cd</span> /opt/html2/v5/v5_uc
+git checkout bate1
+git pull
+</code></pre>
+<h3 id="5-%E6%B5%8B%E8%AF%95">5.&#x6D4B;&#x8BD5;</h3>
 
                     
                     </section>
@@ -350,10 +284,8 @@
         </div>
 
         
-        <a href="./chapter3.html" class="navigation navigation-prev " aria-label="Previous page: 消息通知流程"><i class="fa fa-angle-left"></i></a>
+        <a href="./chapter3.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: git:clone项目到一个非空目录"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="./chapter5.html" class="navigation navigation-next " aria-label="Next page: git:解决本地多个ssh-key的问题"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
