@@ -9,7 +9,6 @@
         "message": "value"
     },
     "page": {    //分页参数，必需。
-        
         "limit":"value",    //每页记录条数
         "page": "value",    //本页页码
         "count": "value" //总记录数
@@ -28,7 +27,6 @@
         "message": "success"
     },
     "page": {    //分页参数，必需。
-        
         "limit":"20",    //每页记录条数
         "page": "1",    //本页页码
         "count": "200" //总记录数
