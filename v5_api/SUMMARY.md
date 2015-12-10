@@ -1,4 +1,10 @@
 # Summary
 * [登录](chapter1.md)
 * [设置](chapter2.md)
-* [用户](chapter3.md)
+* [关系](follow/README.md)
+   * [关注](follow/store.md)
+   * [取消关注](follow/destory.md)
+   * [获取用户关注列表](follow/friends.md)
+   * [获取用户粉丝列表](follow/fans.md)
+   * [获取用户关注UID列表](follow/friends-ids.md)
+   * [获取用户粉丝UID列表](follow/fans-ids.md)
