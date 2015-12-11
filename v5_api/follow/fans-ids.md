@@ -24,18 +24,12 @@
         "code": 200,
         "message":"success"
     },
-    "data": [
-    {
-        "friend_uid": 1
-        "nickname":"zhanghsan",
-        "avatar":"avatar.jpg"
-    },
-    {
-        
-        "friend_uid": 2
-        "nickname":"zhanghsan",
-        "avatar":"avatar.jpg"
-    }
-    ]   
+    "data": {
+        "ids":[
+            1,
+            2,
+            3
+        ]
+    }  
 }
 ```
