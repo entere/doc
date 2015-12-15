@@ -17,7 +17,13 @@
 > * `job`会被推送到`redis`中，可以在`redis`中通过 `lrange queues:v5:emails 0 10` 命令来查看队列中有那些`job`
 
 
+
+
 ### 目前已有的队列：
-| key               |  job             | 功能描述 |
+| key               |  job/event       | 功能描述 |
 | :--------         | :---------       |:----------------|
-| queues:v5:emails  | SendEmail      | 发送邮件各种邮件  |
+| queues:v5:emails  | SendEmail      | 发送邮件各种邮件(job)  |
+| queues:v5:default | UserLogEvent   | 记录用户日志(event)  |
+
+
+

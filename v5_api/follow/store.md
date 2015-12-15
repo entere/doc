@@ -22,7 +22,7 @@
 {
     "meta":{
         "code": 200,
-        "message":"success"
+        "message":"OK"
     },
     "data": {
         "fans_uid": 622586376,

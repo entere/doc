@@ -23,7 +23,7 @@
 {
     "meta":{
         "code": 200,
-        "message":"success"
+        "message":"OK"
     },
     "data": [
     {
