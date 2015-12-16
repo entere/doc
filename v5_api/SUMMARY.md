@@ -2,6 +2,7 @@
 * [登录](sign/README.md)
     * [登录](sign/in.md)
     * [退出登录](sign/out.md)
+    * [注册](sign/up.md)
 
 * [关系](follow/README.md)
     * [关注](follow/store.md)
