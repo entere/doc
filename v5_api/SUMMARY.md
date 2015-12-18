@@ -13,6 +13,15 @@
     * [获取用户粉丝UID列表](follow/fans-ids.md)
 * [用户](user/README.md)
     * [获取用户信息](user/show.md)
+
+* [密码](password/README.md)
+    * [找回密码发送邮件](password/forget.md)
+    * [找回密码重置密码](password/reset.md)
+    * [修改密码](password/update.md)
+
+* [设置](setting/README.md)
+    * [验证邮箱发送邮件](setting/email-send.md)
+    * [验证邮箱code](setting/email-confirm.md)
    
 * [开发过程](dev/README.md)
     * [队列](dev/queue.md)

@@ -1,7 +1,7 @@
 # 获取用户信息
 根据uid获取用户信息
 
-- URL：/user/622586376
+- URL：/user/622586376?type=uid
 
 - HTTP请求方式：GET
 
@@ -11,7 +11,7 @@
 
 ```
 {
-      
+   "type":"email"   //in uid,email
 }
 ```
 

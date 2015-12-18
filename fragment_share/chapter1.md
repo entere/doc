@@ -1,6 +1,11 @@
 # 第三方登录流程
 
+
+    [TOC]
+
+
 ### 1.概述
+
 数据库设计时`users_bind`表专门用来存放与第三方帐户的绑定，其实这个表的核心字段就是两个，一个是我们网站的用户`id(uid)`，一个是用户在第三方网站的`id(openid)`
 
 users collection
@@ -22,6 +27,7 @@ openid:234567    u_id:5     platform:weibo      access_token:***
 用户要解除绑定就只需要把绑定纪录从绑定表`users_bind`中删除就行了。
 
 ### 2.数据结构
+
 users collection
 
 ```
