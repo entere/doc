@@ -22,7 +22,7 @@
 * [设置](setting/README.md)
     * [验证邮箱发送邮件](setting/email-send.md)
     * [验证邮箱code](setting/email-confirm.md)
-   
+
 * [开发过程](dev/README.md)
     * [队列](dev/queue.md)
     * [jwt](dev/jwt.md)
