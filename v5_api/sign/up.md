@@ -1,4 +1,5 @@
 # 注册
+accout已存在，code返回409
 
 - URL：/sign/up 
 

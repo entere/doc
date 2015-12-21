@@ -1,6 +1,7 @@
 # 验证邮箱发送邮件
+邮箱不存在，code返回404
 
-- URL：/setting/email 
+- URL：/setting/email/confirm
 
 - HTTP请求方式：POST
 
@@ -24,6 +25,8 @@
     } 
     
 }
+
+
 ```
 
 - 关于错误返回值与错误代码，参见 [错误代码说明](../README.md)
