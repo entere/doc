@@ -3,6 +3,7 @@
     * [登录](sign/in.md)
     * [退出登录](sign/out.md)
     * [注册](sign/up.md)
+    * [checkToken](sign/check-token.md)
 
 * [关系](follow/README.md)
     * [关注](follow/store.md)
