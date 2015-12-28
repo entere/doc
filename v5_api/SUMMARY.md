@@ -36,3 +36,5 @@
     * [users_follow](db/users-follow.md)
     * [users_log](db/users-log.md)
     * [articles](db/articles.md)
+    * [collections](db/collections.md)
+    

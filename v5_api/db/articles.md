@@ -13,8 +13,8 @@
     "subtitle":"xxx",
     "summary" : "xxx",
     "body":"xxx",
-    "pubdate" : 1417663213,
-    "uppdate" : 1417663213,
+    "add_time" : 1417663213,
+    "update_time" : 1417663213,
     "from":"blogchina",//blogchina|ywt
     "word_count" : 1432,
     
