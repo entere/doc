@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>users_log | Introduction</title>
+        <title>users_follow | Introduction</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -25,8 +25,10 @@
         
     
     
+    <link rel="next" href="../db/users-log.html" />
     
-    <link rel="prev" href="../db/.users-follow.html" />
+    
+    <link rel="prev" href="../db/users-bind.html" />
     
 
         
@@ -34,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="7.5" data-basepath=".." data-revision="Thu Dec 24 2015 17:41:54 GMT+0800 (CST)">
+    <div class="book" data-level="7.4" data-basepath=".." data-revision="Mon Dec 28 2015 15:58:04 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -536,10 +538,10 @@
             
         </li>
     
-        <li class="chapter " data-level="7.4" data-path="db/.users-follow.html">
+        <li class="chapter active" data-level="7.4" data-path="db/users-follow.html">
             
                 
-                    <a href="../db/.users-follow.html">
+                    <a href="../db/users-follow.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -551,16 +553,31 @@
             
         </li>
     
-        <li class="chapter active" data-level="7.5" data-path="db/.users-log.html">
+        <li class="chapter " data-level="7.5" data-path="db/users-log.html">
             
                 
-                    <a href="../db/.users-log.html">
+                    <a href="../db/users-log.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>7.5.</b>
                         
                         users_log
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="db/articles.html">
+            
+                
+                    <a href="../db/articles.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        articles
                     </a>
             
             
@@ -676,22 +693,17 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="users-log">users_log</h1>
+                        <h1 id="users-follow">users_follow</h1>
 <h3 id="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">&#x6570;&#x636E;&#x7ED3;&#x6784;</h3>
 <pre><code class="lang-json">
 {
-    <span class="hljs-string">&quot;_id&quot;</span> : ObjectId(<span class="hljs-string">&quot;56775a83b79cfe0814000029&quot;</span>),
-    <span class="hljs-string">&quot;uid&quot;</span> : <span class="hljs-number">597346824</span>,
-    <span class="hljs-string">&quot;type&quot;</span> : <span class="hljs-string">&quot;login&quot;</span>,
-    <span class="hljs-string">&quot;action&quot;</span> : <span class="hljs-string">&quot;&#x767B;&#x5F55;&#x4E86;&quot;</span>,
-    <span class="hljs-string">&quot;add_time&quot;</span> : <span class="hljs-number">1450662531</span>,
+    <span class="hljs-string">&quot;_id&quot;</span> : ObjectId(<span class="hljs-string">&quot;5666b37c46d81294840041b3&quot;</span>),
+    <span class="hljs-string">&quot;fans_uid&quot;</span> : NumberLong(<span class="hljs-number">614132744</span>),
+    <span class="hljs-string">&quot;friend_uid&quot;</span> : NumberLong(<span class="hljs-number">39</span>),
     <span class="hljs-string">&quot;ip&quot;</span> : <span class="hljs-string">&quot;127.0.0.1&quot;</span>,
-    <span class="hljs-string">&quot;device&quot;</span> : <span class="hljs-string">&quot;WebKit&quot;</span>,
-    <span class="hljs-string">&quot;platform&quot;</span> : <span class="hljs-string">&quot;Windows&quot;</span>,
-    <span class="hljs-string">&quot;browser&quot;</span> : <span class="hljs-string">&quot;Chrome&quot;</span>,
-    <span class="hljs-string">&quot;agent&quot;</span> : <span class="hljs-string">&quot;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36&quot;</span>,
-    <span class="hljs-string">&quot;updated_at&quot;</span> : ISODate(<span class="hljs-string">&quot;2015-12-21T01:48:51.000Z&quot;</span>),
-    <span class="hljs-string">&quot;created_at&quot;</span> : ISODate(<span class="hljs-string">&quot;2015-12-21T01:48:51.000Z&quot;</span>)
+    <span class="hljs-string">&quot;add_time&quot;</span> : NumberLong(<span class="hljs-number">1449571196</span>),
+    <span class="hljs-string">&quot;updated_at&quot;</span> : ISODate(<span class="hljs-string">&quot;2015-12-08T10:39:56.780Z&quot;</span>),
+    <span class="hljs-string">&quot;created_at&quot;</span> : ISODate(<span class="hljs-string">&quot;2015-12-08T10:39:56.780Z&quot;</span>)
 }
 </code></pre>
 
@@ -704,8 +716,10 @@
         </div>
 
         
-        <a href="../db/.users-follow.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: users_follow"><i class="fa fa-angle-left"></i></a>
+        <a href="../db/users-bind.html" class="navigation navigation-prev " aria-label="Previous page: users_bind"><i class="fa fa-angle-left"></i></a>
         
+        
+        <a href="../db/users-log.html" class="navigation navigation-next " aria-label="Next page: users_log"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

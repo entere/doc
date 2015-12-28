@@ -33,5 +33,6 @@
     * [actives_data](db/actives-data.md)
     * [users](db/users.md)
     * [users_bind](db/users-bind.md)
-    * [users_follow](db/.users-follow.md)
-    * [users_log](db/.users-log.md)
+    * [users_follow](db/users-follow.md)
+    * [users_log](db/users-log.md)
+    * [articles](db/articles.md)

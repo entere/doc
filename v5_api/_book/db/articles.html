@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>users | Introduction</title>
+        <title>articles | Introduction</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -25,10 +25,8 @@
         
     
     
-    <link rel="next" href="../db/users-bind.html" />
     
-    
-    <link rel="prev" href="../db/actives-data.html" />
+    <link rel="prev" href="../db/users-log.html" />
     
 
         
@@ -36,7 +34,7 @@
     <body>
         
         
-    <div class="book" data-level="7.2" data-basepath=".." data-revision="Mon Dec 28 2015 15:58:04 GMT+0800 (CST)">
+    <div class="book" data-level="7.6" data-basepath=".." data-revision="Mon Dec 28 2015 15:58:04 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -508,7 +506,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="7.2" data-path="db/users.html">
+        <li class="chapter " data-level="7.2" data-path="db/users.html">
             
                 
                     <a href="../db/users.html">
@@ -568,7 +566,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.6" data-path="db/articles.html">
+        <li class="chapter active" data-level="7.6" data-path="db/articles.html">
             
                 
                     <a href="../db/articles.html">
@@ -693,61 +691,48 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="users">users</h1>
+                        <h1 id="articles">articles</h1>
 <h3 id="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">&#x6570;&#x636E;&#x7ED3;&#x6784;</h3>
 <pre><code class="lang-json">
 {
-    <span class="hljs-string">&quot;_id&quot;</span> : ObjectId(<span class="hljs-string">&quot;5677730046d81242120041a7&quot;</span>),
-    <span class="hljs-string">&quot;uid&quot;</span> : NumberLong(<span class="hljs-number">605735432</span>),
-    <span class="hljs-string">&quot;auto_uid&quot;</span> : NumberLong(<span class="hljs-number">14</span>),
-    <span class="hljs-string">&quot;accout&quot;</span> : <span class="hljs-string">&quot;entere@126.com&quot;</span>,
-    <span class="hljs-string">&quot;email&quot;</span> : <span class="hljs-string">&quot;entere@126.com&quot;</span>,
-    <span class="hljs-string">&quot;mobile&quot;</span> : <span class="hljs-string">&quot;&quot;</span>,
-    <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;&quot;</span>,
-    <span class="hljs-string">&quot;nickname&quot;</span> : <span class="hljs-string">&quot;hello&quot;</span>,
-    <span class="hljs-string">&quot;password&quot;</span> : <span class="hljs-string">&quot;111111&quot;</span>,
-    <span class="hljs-string">&quot;avatar&quot;</span> : <span class="hljs-string">&quot;&quot;</span>,
-    <span class="hljs-string">&quot;ip&quot;</span> : <span class="hljs-string">&quot;127.0.0.1&quot;</span>,
-    <span class="hljs-string">&quot;add_time&quot;</span> : NumberLong(<span class="hljs-number">1450668800</span>),
-    <span class="hljs-string">&quot;is_valid_email&quot;</span> : <span class="hljs-string">&quot;N&quot;</span>,
-    <span class="hljs-string">&quot;is_valid_mobile&quot;</span> : <span class="hljs-string">&quot;N&quot;</span>,
-    <span class="hljs-string">&quot;is_avatar_uploaded&quot;</span> : <span class="hljs-string">&quot;N&quot;</span>,
-    <span class="hljs-string">&quot;allow_comment&quot;</span> : <span class="hljs-string">&quot;Y&quot;</span>,
-    <span class="hljs-string">&quot;allow_reward&quot;</span> : <span class="hljs-string">&quot;N&quot;</span>,
-    <span class="hljs-string">&quot;reg_from&quot;</span> : <span class="hljs-string">&quot;blogchina&quot;</span>,
-    <span class="hljs-string">&quot;intro&quot;</span> : <span class="hljs-string">&quot;&quot;</span>,
-    <span class="hljs-string">&quot;homepage&quot;</span> : <span class="hljs-string">&quot;&quot;</span>,
-    <span class="hljs-string">&quot;numbers&quot;</span> : {
-        <span class="hljs-string">&quot;followers&quot;</span> : NumberLong(<span class="hljs-number">0</span>),
-        <span class="hljs-string">&quot;friends&quot;</span> : NumberLong(<span class="hljs-number">0</span>),
-        <span class="hljs-string">&quot;blog&quot;</span> : NumberLong(<span class="hljs-number">0</span>)
+    <span class="hljs-string">&quot;_id&quot;</span> : ObjectId(<span class="hljs-string">&quot;547fd2ed2997cfa475516662&quot;</span>),
+    <span class="hljs-string">&quot;aid&quot;</span> : <span class="hljs-number">12345</span>,
+    <span class="hljs-string">&quot;user_id&quot;</span> : <span class="hljs-number">52</span>,
+    <span class="hljs-string">&quot;notebook_id&quot;</span>:<span class="hljs-number">1</span>, <span class="hljs-comment">//&#x4EBA;&#x4E2A;&#x5206;&#x7C7B;</span>
+    <span class="hljs-string">&quot;title&quot;</span> : <span class="hljs-string">&quot;xxx&quot;</span>,
+    <span class="hljs-string">&quot;subtitle&quot;</span>:<span class="hljs-string">&quot;xxx&quot;</span>,
+    <span class="hljs-string">&quot;summary&quot;</span> : <span class="hljs-string">&quot;xxx&quot;</span>,
+    <span class="hljs-string">&quot;body&quot;</span>:<span class="hljs-string">&quot;xxx&quot;</span>,
+    <span class="hljs-string">&quot;pubdate&quot;</span> : <span class="hljs-number">1417663213</span>,
+    <span class="hljs-string">&quot;uppdate&quot;</span> : <span class="hljs-number">1417663213</span>,
+    <span class="hljs-string">&quot;from&quot;</span>:<span class="hljs-string">&quot;blogchina&quot;</span>,<span class="hljs-comment">//blogchina|ywt</span>
+    <span class="hljs-string">&quot;word_count&quot;</span> : <span class="hljs-number">1432</span>,
+
+    <span class="hljs-string">&quot;pics&quot;</span> : {
+        <span class="hljs-string">&quot;exists&quot;</span>:<span class="hljs-string">&quot;Y&quot;</span>,
+        <span class="hljs-string">&quot;url&quot;</span>:[<span class="hljs-string">&apos;xxx/1.jpg&apos;</span>,<span class="hljs-string">&apos;xxx/2.jpg&apos;</span>],
     },
-    <span class="hljs-string">&quot;gender&quot;</span> : NumberLong(<span class="hljs-number">3</span>),
-    <span class="hljs-string">&quot;realname&quot;</span> : <span class="hljs-string">&quot;&quot;</span>,
-    <span class="hljs-string">&quot;rank&quot;</span> : <span class="hljs-string">&quot;&quot;</span>,
-    <span class="hljs-string">&quot;blog_name&quot;</span> : <span class="hljs-string">&quot;&quot;</span>,
-    <span class="hljs-string">&quot;db_id&quot;</span> : NumberLong(<span class="hljs-number">0</span>),
+    <span class="hljs-string">&quot;videos&quot;</span> : {
+        <span class="hljs-string">&quot;exists&quot;</span>:<span class="hljs-string">&quot;Y&quot;</span>,
+        <span class="hljs-string">&quot;url&quot;</span>:[<span class="hljs-string">&apos;xxx/1.flv&apos;</span>,<span class="hljs-string">&apos;xxx/2.flv&apos;</span>],
+    },
+    <span class="hljs-string">&quot;tag&quot;</span> : [],
+
+    <span class="hljs-string">&quot;ip&quot;</span> : <span class="hljs-string">&quot;10.10.4.244&quot;</span>,
+    <span class="hljs-string">&quot;last_ip&quot;</span> : <span class="hljs-string">&quot;10.10.4.244&quot;</span>,
+    <span class="hljs-string">&quot;state&quot;</span>:<span class="hljs-string">&quot;A&quot;</span>,<span class="hljs-comment">//A&#x5DF2;&#x53D1;&#x5E03; B&#x8349;&#x7A3F;&#x7BB1; C&#x5728;&#x56DE;&#x6536;&#x7AD9; D&#x4ECE;&#x56DE;&#x6536;&#x7AD9;&#x5220;&#x9664;</span>
+    <span class="hljs-string">&quot;allow&quot;</span>:{
+        <span class="hljs-string">&quot;comment&quot;</span> : <span class="hljs-string">&quot;Y&quot;</span>,
+        <span class="hljs-string">&quot;reward&quot;</span> : <span class="hljs-string">&quot;N&quot;</span>,
+        <span class="hljs-string">&quot;love&quot;</span> : <span class="hljs-string">&quot;Y&quot;</span>,
+    },
     <span class="hljs-string">&quot;monitor&quot;</span> : {
         <span class="hljs-string">&quot;is_audit&quot;</span> : <span class="hljs-string">&quot;Y&quot;</span>,
         <span class="hljs-string">&quot;is_pending&quot;</span> : <span class="hljs-string">&quot;N&quot;</span>,
-        <span class="hljs-string">&quot;is_lock&quot;</span> : <span class="hljs-string">&quot;N&quot;</span>,
+        <span class="hljs-string">&quot;is_hidden&quot;</span> : <span class="hljs-string">&quot;N&quot;</span>,
         <span class="hljs-string">&quot;is_del&quot;</span> : <span class="hljs-string">&quot;N&quot;</span>
     },
-    <span class="hljs-string">&quot;birthday&quot;</span> : {
-        <span class="hljs-string">&quot;year&quot;</span> : <span class="hljs-string">&quot;&quot;</span>,
-        <span class="hljs-string">&quot;month&quot;</span> : <span class="hljs-string">&quot;&quot;</span>,
-        <span class="hljs-string">&quot;day&quot;</span> : <span class="hljs-string">&quot;&quot;</span>
-    },
-    <span class="hljs-string">&quot;address&quot;</span> : {
-        <span class="hljs-string">&quot;resideprovince&quot;</span> : <span class="hljs-string">&quot;&quot;</span>,
-        <span class="hljs-string">&quot;residecity&quot;</span> : <span class="hljs-string">&quot;&quot;</span>,
-        <span class="hljs-string">&quot;residecounty&quot;</span> : <span class="hljs-string">&quot;&quot;</span>,
-        <span class="hljs-string">&quot;corporation&quot;</span> : <span class="hljs-string">&quot;&quot;</span>
-    },
-    <span class="hljs-string">&quot;magnumopus&quot;</span> : <span class="hljs-string">&quot;&quot;</span>,
-    <span class="hljs-string">&quot;privacy&quot;</span> : [],
-    <span class="hljs-string">&quot;updated_at&quot;</span> : ISODate(<span class="hljs-string">&quot;2015-12-21T03:33:20.290Z&quot;</span>),
-    <span class="hljs-string">&quot;created_at&quot;</span> : ISODate(<span class="hljs-string">&quot;2015-12-21T03:33:20.290Z&quot;</span>)
+
 }
 </code></pre>
 
@@ -760,10 +745,8 @@
         </div>
 
         
-        <a href="../db/actives-data.html" class="navigation navigation-prev " aria-label="Previous page: actives_data"><i class="fa fa-angle-left"></i></a>
+        <a href="../db/users-log.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: users_log"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../db/users-bind.html" class="navigation navigation-next " aria-label="Next page: users_bind"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
