@@ -1,5 +1,5 @@
 # collections_article
-专题
+专题-文章
 
 ### 数据结构
 

@@ -1,4 +1,5 @@
 # users
+用户
 
 ### 数据结构
 
@@ -35,12 +36,7 @@
     "rank" : "",
     "blog_name" : "",
     "db_id" : NumberLong(0),
-    "monitor" : {
-        "is_audit" : "Y",
-        "is_pending" : "N",
-        "is_lock" : "N",
-        "is_del" : "N"
-    },
+    
     "birthday" : {
         "year" : "",
         "month" : "",
@@ -54,6 +50,12 @@
     },
     "magnumopus" : "",
     "privacy" : [],
+    "monitor" : {
+        "is_audit" : "Y",
+        "is_pending" : "N",
+        "is_lock" : "N",
+        "is_del" : "N"
+    },
     "updated_at" : ISODate("2015-12-21T03:33:20.290Z"),
     "created_at" : ISODate("2015-12-21T03:33:20.290Z")
 }

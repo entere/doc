@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>jwt | Introduction</title>
+        <title>archives | Introduction</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -25,10 +25,8 @@
         
     
     
-    <link rel="next" href="../dev/idGenerate.html" />
     
-    
-    <link rel="prev" href="../dev/queue.html" />
+    <link rel="prev" href="../db/footprints.html" />
     
 
         
@@ -36,7 +34,7 @@
     <body>
         
         
-    <div class="book" data-level="6.2" data-basepath=".." data-revision="Tue Dec 29 2015 10:44:31 GMT+0800 (CST)">
+    <div class="book" data-level="7.13" data-basepath=".." data-revision="Tue Dec 29 2015 10:44:31 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -442,7 +440,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="6.2" data-path="dev/jwt.html">
+        <li class="chapter " data-level="6.2" data-path="dev/jwt.html">
             
                 
                     <a href="../dev/jwt.html">
@@ -673,7 +671,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.13" data-path="db/archives.html">
+        <li class="chapter active" data-level="7.13" data-path="db/archives.html">
             
                 
                     <a href="../db/archives.html">
@@ -798,40 +796,9 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="jwt">jwt</h1>
-<p>&#x7528;&#x6237;&#x767B;&#x5F55;&#x65F6;&#x4F1A;&#x4EA7;&#x751F;<code>json web token</code>,<code>jwt</code>&#x5B58;&#x5728;<code>redis</code>&#x4E2D;,&#x6709;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#xFF0C;<code>jwt</code>&#x662F;&#x9A8C;&#x8BC1;&#x7528;&#x6237;&#x662F;&#x5426;&#x767B;&#x5F55;&#x7684;&#x4EE4;&#x724C;&#xFF0C;&#x4E5F;&#x662F;&#x68C0;&#x9A8C;&#x662F;&#x5426;&#x6709;<code>api</code>&#x6743;&#x9650;&#x7684;&#x6807;&#x8BC6;</p>
-<h3 id="-jwt-%E5%9C%A8-redis-%E4%B8%AD%E7%9A%84%E7%A4%BA%E4%BE%8B%EF%BC%9A"><code>jwt</code>&#x5728;<code>redis</code>&#x4E2D;&#x7684;&#x793A;&#x4F8B;&#xFF1A;</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">key</th>
-<th style="text-align:left">value</th>
-<th style="text-align:left">&#x63CF;&#x8FF0;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">v5:jwt:uid:505146376:iat:1450082539</td>
-<td style="text-align:left">jwt&#x5B57;&#x4E32;</td>
-<td style="text-align:left">&#x7528;&#x6237;&#x6BCF;&#x6B21;&#x767B;&#x5F55;&#x90FD;&#x4F1A;&#x4EA7;&#x751F;&#x4E0D;&#x540C;&#x7684;jwt,&#x591A;&#x7EC8;&#x7AEF;&#x9000;&#x51FA;&#x767B;&#x5F55;&#x4E92;&#x4E0D;&#x5F71;&#x54CD; set&#x7C7B;&#x578B;</td>
-</tr>
-<tr>
-<td style="text-align:left">v5:jwt:md5:AFEB0549A6B245B52D7D55E7C7D919A0</td>
-<td style="text-align:left">uid&#x548C;&#x521B;&#x5EFA;&#x65F6;&#x95F4;</td>
-<td style="text-align:left">&#x9000;&#x51FA;&#x767B;&#x9646;&#x4F1A;&#x6E05;&#x7406;&#x6B64;key hash&#x7C7B;&#x578B;</td>
-</tr>
-</tbody>
-</table>
-<h3 id="-redis-%E4%B8%AD%E6%9F%A5%E7%9C%8B%E7%A4%BA%E4%BE%8B%EF%BC%9A"><code>redis</code>&#x4E2D;&#x67E5;&#x770B;&#x793A;&#x4F8B;&#xFF1A;</h3>
-<pre><code>get v5:jwt:uid:505146376:iat:1450082539
-&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOjYwNTczNTQzMiwiZXhwIjoxNDUxMDI5NTc4LCJpYXQiOjE0NTA2Njk1NzgsImp0aSI6IjE0NTA2Njk1Nzg4NTM4IiwiZGF0YSI6eyJ1aWQiOjYwNTczNTQzMn19.OClfCMm8IqkKWVDcaTQZDghBu0XVLQ5aSqRJqazatZ8&quot;
+                        <h1 id="archives">archives</h1>
+<p>&#x65E5;&#x671F;&#x5F52;&#x6863;</p>
 
-hgetall v5:jwt:md5:AFEB0549A6B245B52D7D55E7C7D919A0
-1) &quot;uid&quot;
-2) &quot;505146376&quot;
-3) &quot;iat&quot;
-4) &quot;1450082539&quot;
-</code></pre>
                     
                     </section>
                 
@@ -841,10 +808,8 @@ hgetall v5:jwt:md5:AFEB0549A6B245B52D7D55E7C7D919A0
         </div>
 
         
-        <a href="../dev/queue.html" class="navigation navigation-prev " aria-label="Previous page: 队列"><i class="fa fa-angle-left"></i></a>
+        <a href="../db/footprints.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: footprints"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../dev/idGenerate.html" class="navigation navigation-next " aria-label="Next page: idGenerate"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

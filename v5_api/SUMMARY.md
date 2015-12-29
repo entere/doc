@@ -40,4 +40,8 @@
     * [collections_article](db/collections-article.md)
     * [collections_follower](db/collections-follower.md)
     * [collections_manager](db/collections-manager.md)
+    * [notebooks](db/notebooks.md)
+    * [footprints](db/footprints.md)
+    * [archives](db/archives.md)
+    
     
