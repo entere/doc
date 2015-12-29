@@ -15,6 +15,15 @@
 |503 |Service Unavailable     |服务器异常 |
 
 
+### 约定
+1.url中用中划线代替下划线(参数除外);
+2.url限定参数page=1&limit=10
+3.相关字段名：
+    add_time,update_time,total,state
+
+
+
+
 ### `v5_api`域名
 http://api5.blogcore.cn
 
