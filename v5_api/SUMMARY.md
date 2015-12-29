@@ -37,4 +37,7 @@
     * [users_log](db/users-log.md)
     * [articles](db/articles.md)
     * [collections](db/collections.md)
+    * [collections_article](db/collections-article.md)
+    * [collections_follower](db/collections-follower.md)
+    * [collections_manager](db/collections-manager.md)
     

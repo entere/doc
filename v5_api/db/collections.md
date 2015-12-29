@@ -16,6 +16,7 @@
     "add_time" : 1450668800,
     "update_time" : 1417663213,
     "count" : 20,
+    "follower":0,
     "allow_contribute":"Y",//是否允许投稿
     "need_audit":"N",//是否需要审核
     "manager":[1,2,3,4],   
