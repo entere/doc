@@ -1,4 +1,5 @@
-# Introduction
+# 博客中国开发文档
+此文档为博客中国技术部API开发文档
 
 ### `v5_api` 错误码规范
 
@@ -16,8 +17,11 @@
 
 
 ### 约定
+
 1.url中用中划线代替下划线(参数除外);
-2.url限定参数page=1&limit=10
+
+2.url限定参数page=x&limit=x&type=x&
+
 3.相关字段名：
     add_time,update_time,total,state
 

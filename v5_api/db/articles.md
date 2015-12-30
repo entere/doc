@@ -8,6 +8,7 @@
 {
     "_id" : ObjectId("547fd2ed2997cfa475516662"),
     "aid" : 12345,
+    "auto_aid" : 12,
     "user_id" : 52,
     "notebook_id":1, //人个分类
     "title" : "xxx",

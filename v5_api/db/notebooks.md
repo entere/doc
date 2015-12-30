@@ -7,7 +7,8 @@
 
 {
     "_id" : ObjectId("547fd2ed2997cfa475516662"),
-    "nid":"xxx"
+    "nid":"xxx",
+    "auto_nid" : 12,
     "name" : "xxx",
     "user_id" : 52,
     "serial_number" : 1,//排序号
