@@ -28,7 +28,7 @@
         "exists":"Y",
         "url":['xxx/1.flv','xxx/2.flv'],
     },
-    "tag" : [],
+    "tag" : ['w3c','nodejs'],
     
     "ip" : "10.10.4.244",
     "last_ip" : "10.10.4.244",
@@ -37,6 +37,7 @@
         "comment" : "Y",
         "reward" : "N",
         "love" : "Y",
+        "display":"Y",//是否允许别人查看
     },
     "monitor" : {
         "is_audit" : "Y",

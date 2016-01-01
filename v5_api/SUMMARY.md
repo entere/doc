@@ -28,6 +28,7 @@
     * [队列](dev/queue.md)
     * [jwt](dev/jwt.md)
     * [idGenerate](dev/idGenerate.md)
+    * [统计数量](dev/number.md)
 
 * [数据库字典](db/README.md)
     * [actives_data](db/actives-data.md)

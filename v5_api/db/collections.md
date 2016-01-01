@@ -16,8 +16,7 @@
     "color" : "#cccccc",
     "add_time" : 1450668800,
     "update_time" : 1417663213,
-    "total" : 20,//专题下的文章数
-    "follower":0,//有多少人关注专题
+    
     "allow_contribute":"Y",//是否允许投稿
     "need_audit":"N",//是否需要审核
     "manager":[1,2,3,4],  

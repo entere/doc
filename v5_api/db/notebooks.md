@@ -14,7 +14,7 @@
     "serial_number" : 1,//排序号
     "add_time" : 1417663213,
     "update_time" : 1417663213,
-    "total" : 20,
+    
     "state":"A",//用户自己操作A正常 B隐藏 C删除 
     "monitor" : { //监管操作
         "is_hidden" : "N",

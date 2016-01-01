@@ -56,8 +56,7 @@
         "is_lock" : "N",
         "is_del" : "N"
     },
-    "updated_at" : ISODate("2015-12-21T03:33:20.290Z"),
-    "created_at" : ISODate("2015-12-21T03:33:20.290Z")
+    
 }
 
 ```
