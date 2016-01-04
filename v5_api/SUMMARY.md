@@ -44,5 +44,9 @@
     * [notebooks](db/notebooks.md)
     * [footprints](db/footprints.md)
     * [archives](db/archives.md)
+    * [notifications](db/notifications.md)
+    * [timelines](db/timelines.md)
+    
+    
     
     

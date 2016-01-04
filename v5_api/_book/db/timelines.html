@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>articles | 博客中国开发文档</title>
+        <title>timelines | 博客中国开发文档</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -25,10 +25,8 @@
         
     
     
-    <link rel="next" href="../db/collections.html" />
     
-    
-    <link rel="prev" href="../db/users-log.html" />
+    <link rel="prev" href="../db/notifications.html" />
     
 
         
@@ -36,7 +34,7 @@
     <body>
         
         
-    <div class="book" data-level="7.6" data-basepath=".." data-revision="Mon Jan 04 2016 17:49:32 GMT+0800 (CST)">
+    <div class="book" data-level="7.15" data-basepath=".." data-revision="Mon Jan 04 2016 17:49:32 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -583,7 +581,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="7.6" data-path="db/articles.html">
+        <li class="chapter " data-level="7.6" data-path="db/articles.html">
             
                 
                     <a href="../db/articles.html">
@@ -718,7 +716,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.15" data-path="db/timelines.html">
+        <li class="chapter active" data-level="7.15" data-path="db/timelines.html">
             
                 
                     <a href="../db/timelines.html">
@@ -843,50 +841,107 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="articles">articles</h1>
-<p>&#x535A;&#x5BA2;&#x6587;&#x7AE0;</p>
+                        <h1 id="timelines">timelines</h1>
+<p>&#x6211;&#x7684;&#x52A8;&#x6001;</p>
 <h3 id="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">&#x6570;&#x636E;&#x7ED3;&#x6784;</h3>
+<p>&#x52A8;&#x6001;&#x7684;&#x7C7B;&#x578B;&#x6709;&#x5982;&#x4E0B;&#x51E0;&#x79CD;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">type</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">follow_user</td>
+<td style="text-align:left">&#x6211; &#x5173;&#x6CE8;&#x4E86;&#x4F5C;&#x5BB6; xxx</td>
+</tr>
+<tr>
+<td style="text-align:left">follow_collection</td>
+<td style="text-align:left">&#x6211; &#x5173;&#x6CE8;&#x4E86;&#x4E13;&#x9898; xxx</td>
+</tr>
+<tr>
+<td style="text-align:left">support_article</td>
+<td style="text-align:left">&#x6211; &#x559C;&#x6B22;&#x4E86;&#x6587;&#x7AE0;  xxx</td>
+</tr>
+<tr>
+<td style="text-align:left">comment_article</td>
+<td style="text-align:left">&#x6211; &#x8BC4;&#x8BBA;&#x4E86;&#x6587;&#x7AE0;  xxx</td>
+</tr>
+<tr>
+<td style="text-align:left">sign_up</td>
+<td style="text-align:left">&#x6211; &#x52A0;&#x5165;&#x4E86;&#x535A;&#x5BA2;&#x4E2D;&#x56FD;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5404;&#x7C7B;&#x578B;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF1A;</p>
 <pre><code class="lang-json">
 {
     <span class="hljs-string">&quot;_id&quot;</span> : ObjectId(<span class="hljs-string">&quot;547fd2ed2997cfa475516662&quot;</span>),
-    <span class="hljs-string">&quot;aid&quot;</span> : <span class="hljs-number">12345</span>,
-    <span class="hljs-string">&quot;auto_aid&quot;</span> : <span class="hljs-number">12</span>,
-    <span class="hljs-string">&quot;user_id&quot;</span> : <span class="hljs-number">52</span>,
-    <span class="hljs-string">&quot;notebook_id&quot;</span>:<span class="hljs-number">1</span>, <span class="hljs-comment">//&#x4EBA;&#x4E2A;&#x5206;&#x7C7B;</span>
-    <span class="hljs-string">&quot;title&quot;</span> : <span class="hljs-string">&quot;xxx&quot;</span>,
-    <span class="hljs-string">&quot;subtitle&quot;</span>:<span class="hljs-string">&quot;xxx&quot;</span>,
-    <span class="hljs-string">&quot;summary&quot;</span> : <span class="hljs-string">&quot;xxx&quot;</span>,
-    <span class="hljs-string">&quot;body&quot;</span>:<span class="hljs-string">&quot;xxx&quot;</span>,
-    <span class="hljs-string">&quot;add_time&quot;</span> : <span class="hljs-number">1417663213</span>,
-    <span class="hljs-string">&quot;update_time&quot;</span> : <span class="hljs-number">1417663213</span>,
-    <span class="hljs-string">&quot;from&quot;</span>:<span class="hljs-string">&quot;blogchina&quot;</span>,<span class="hljs-comment">//blogchina|ywt</span>
-    <span class="hljs-string">&quot;word_count&quot;</span> : <span class="hljs-number">1432</span>,
+    <span class="hljs-string">&quot;uid&quot;</span> : <span class="hljs-number">597346824</span>,
+    <span class="hljs-string">&quot;type&quot;</span> : <span class="hljs-string">&quot;follow_user&quot;</span>,
+    <span class="hljs-string">&quot;data&quot;</span> : {
+        <span class="hljs-string">&quot;who&quot;</span>:<span class="hljs-number">123</span>,
+    },
+    <span class="hljs-string">&quot;add_time&quot;</span> : <span class="hljs-number">1450662531</span>,
+    <span class="hljs-string">&quot;ip&quot;</span> : <span class="hljs-string">&quot;127.0.0.1&quot;</span>,
 
-    <span class="hljs-string">&quot;pics&quot;</span> : {
-        <span class="hljs-string">&quot;exists&quot;</span>:<span class="hljs-string">&quot;Y&quot;</span>,
-        <span class="hljs-string">&quot;url&quot;</span>:[<span class="hljs-string">&apos;xxx/1.jpg&apos;</span>,<span class="hljs-string">&apos;xxx/2.jpg&apos;</span>],
-    },
-    <span class="hljs-string">&quot;videos&quot;</span> : {
-        <span class="hljs-string">&quot;exists&quot;</span>:<span class="hljs-string">&quot;Y&quot;</span>,
-        <span class="hljs-string">&quot;url&quot;</span>:[<span class="hljs-string">&apos;xxx/1.flv&apos;</span>,<span class="hljs-string">&apos;xxx/2.flv&apos;</span>],
-    },
-    <span class="hljs-string">&quot;tag&quot;</span> : [<span class="hljs-string">&apos;w3c&apos;</span>,<span class="hljs-string">&apos;nodejs&apos;</span>],
+}
 
-    <span class="hljs-string">&quot;ip&quot;</span> : <span class="hljs-string">&quot;10.10.4.244&quot;</span>,
-    <span class="hljs-string">&quot;last_ip&quot;</span> : <span class="hljs-string">&quot;10.10.4.244&quot;</span>,
-    <span class="hljs-string">&quot;state&quot;</span>:<span class="hljs-string">&quot;A&quot;</span>,<span class="hljs-comment">//A&#x5DF2;&#x53D1;&#x5E03; B&#x8349;&#x7A3F;&#x7BB1; C&#x5728;&#x56DE;&#x6536;&#x7AD9; D&#x4ECE;&#x56DE;&#x6536;&#x7AD9;&#x5220;&#x9664;</span>
-    <span class="hljs-string">&quot;allow&quot;</span>:{
-        <span class="hljs-string">&quot;comment&quot;</span> : <span class="hljs-string">&quot;Y&quot;</span>,
-        <span class="hljs-string">&quot;reward&quot;</span> : <span class="hljs-string">&quot;N&quot;</span>,
-        <span class="hljs-string">&quot;love&quot;</span> : <span class="hljs-string">&quot;Y&quot;</span>,
-        <span class="hljs-string">&quot;display&quot;</span>:<span class="hljs-string">&quot;Y&quot;</span>,<span class="hljs-comment">//&#x662F;&#x5426;&#x5141;&#x8BB8;&#x522B;&#x4EBA;&#x67E5;&#x770B;</span>
+
+{
+    <span class="hljs-string">&quot;_id&quot;</span> : ObjectId(<span class="hljs-string">&quot;547fd2ed2997cfa475516662&quot;</span>),
+    <span class="hljs-string">&quot;uid&quot;</span> : <span class="hljs-number">597346824</span>,
+    <span class="hljs-string">&quot;type&quot;</span> : <span class="hljs-string">&quot;follow_collection&quot;</span>,
+    <span class="hljs-string">&quot;data&quot;</span> : {
+        <span class="hljs-string">&quot;c_id&quot;</span>:<span class="hljs-number">234</span>,
+        <span class="hljs-string">&quot;c_name&quot;</span>:<span class="hljs-string">&quot;xxx&quot;</span>,
     },
-    <span class="hljs-string">&quot;monitor&quot;</span> : {
-        <span class="hljs-string">&quot;is_audit&quot;</span> : <span class="hljs-string">&quot;Y&quot;</span>,
-        <span class="hljs-string">&quot;is_pending&quot;</span> : <span class="hljs-string">&quot;N&quot;</span>,
-        <span class="hljs-string">&quot;is_hidden&quot;</span> : <span class="hljs-string">&quot;N&quot;</span>,
-        <span class="hljs-string">&quot;is_del&quot;</span> : <span class="hljs-string">&quot;N&quot;</span>
+    <span class="hljs-string">&quot;add_time&quot;</span> : <span class="hljs-number">1450662531</span>,
+    <span class="hljs-string">&quot;ip&quot;</span> : <span class="hljs-string">&quot;127.0.0.1&quot;</span>,
+
+}
+
+
+
+{
+    <span class="hljs-string">&quot;_id&quot;</span> : ObjectId(<span class="hljs-string">&quot;547fd2ed2997cfa475516662&quot;</span>),
+    <span class="hljs-string">&quot;uid&quot;</span> : <span class="hljs-number">597346824</span>,
+    <span class="hljs-string">&quot;type&quot;</span> : <span class="hljs-string">&quot;support_article&quot;</span>,
+    <span class="hljs-string">&quot;data&quot;</span> : {
+        <span class="hljs-string">&quot;a_id&quot;</span>:<span class="hljs-number">234</span>,
+        <span class="hljs-string">&quot;a_title&quot;</span>:<span class="hljs-string">&quot;xxx&quot;</span>,
     },
+    <span class="hljs-string">&quot;add_time&quot;</span> : <span class="hljs-number">1450662531</span>,
+    <span class="hljs-string">&quot;ip&quot;</span> : <span class="hljs-string">&quot;127.0.0.1&quot;</span>,
+
+}
+
+
+
+{
+    <span class="hljs-string">&quot;_id&quot;</span> : ObjectId(<span class="hljs-string">&quot;547fd2ed2997cfa475516662&quot;</span>),
+    <span class="hljs-string">&quot;uid&quot;</span> : <span class="hljs-number">597346824</span>,
+    <span class="hljs-string">&quot;type&quot;</span> : <span class="hljs-string">&quot;comment_article&quot;</span>,
+    <span class="hljs-string">&quot;data&quot;</span> : {
+        <span class="hljs-string">&quot;a_id&quot;</span>:<span class="hljs-number">234</span>,
+        <span class="hljs-string">&quot;a_title&quot;</span>:<span class="hljs-string">&quot;xxx&quot;</span>,
+        <span class="hljs-string">&quot;comment&quot;</span>:<span class="hljs-string">&quot;xxx&quot;</span>,
+    },
+    <span class="hljs-string">&quot;add_time&quot;</span> : <span class="hljs-number">1450662531</span>,
+    <span class="hljs-string">&quot;ip&quot;</span> : <span class="hljs-string">&quot;127.0.0.1&quot;</span>,
+
+}
+
+
+
+{
+    <span class="hljs-string">&quot;_id&quot;</span> : ObjectId(<span class="hljs-string">&quot;547fd2ed2997cfa475516662&quot;</span>),
+    <span class="hljs-string">&quot;uid&quot;</span> : <span class="hljs-number">597346824</span>,
+    <span class="hljs-string">&quot;type&quot;</span> : <span class="hljs-string">&quot;sign_up&quot;</span>,
+    <span class="hljs-string">&quot;add_time&quot;</span> : <span class="hljs-number">1450662531</span>,
+    <span class="hljs-string">&quot;ip&quot;</span> : <span class="hljs-string">&quot;127.0.0.1&quot;</span>,
 
 }
 </code></pre>
@@ -900,10 +955,8 @@
         </div>
 
         
-        <a href="../db/users-log.html" class="navigation navigation-prev " aria-label="Previous page: users_log"><i class="fa fa-angle-left"></i></a>
+        <a href="../db/notifications.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: notifications"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../db/collections.html" class="navigation navigation-next " aria-label="Next page: collections"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
