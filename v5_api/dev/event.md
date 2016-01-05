@@ -9,6 +9,7 @@
 |ArticleNumEvent|发表文章或删除文章时用户文章数，个人分类文章数增减|**|
 |SignInEvent|登录后创建并存储jwt令牌|**|
 |UserLogEvent|写用户相关日志|**|
+|TimelineEvent|有相关事件时，把我的动态入库|**|
 |SendEmail[job]|发送各邮件|**|
 
 ### 使用方法：
