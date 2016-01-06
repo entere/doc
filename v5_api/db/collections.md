@@ -20,7 +20,7 @@
     "allow_contribute":"y",//是否允许投稿
     "need_audit":"n",//是否需要审核
     "manager":[1,2,3,4],  
-    "state":"A",//用户自己操作A正常 B隐藏 C删除 
+    "state":"a",//用户自己操作a正常 b隐藏 c删除 
     "monitor" : { //监管操作
         "is_hidden" : "n",
         "is_del" : "n"

@@ -16,7 +16,7 @@
         "to_user_id":54,//访问了谁
     ],
     "add_time" : 1417663213,
-    "state":"A",//用户自己操作A正常 B隐藏 C删除 
+    "state":"a",//用户自己操作a正常 b隐藏 c删除 
     "monitor" : { //监管操作
         "is_hidden" : "n",
         "is_del" : "n"
@@ -39,7 +39,7 @@
         "to_article_id":485747372,
     ],
     "add_time" : 1417663213,
-    "state":"A",//用户自己操作A正常 B隐藏 C删除 
+    "state":"a",//用户自己操作a正常 b隐藏 c删除 
     "monitor" : { //监管操作
         "is_hidden" : "n",
         "is_del" : "n"
