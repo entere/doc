@@ -12,7 +12,7 @@
     "platform" : "blogchina",
     "token" : "",
     "nickname" : "retert",
-    "is_mainuser" : "N"
+    "is_mainuser" : "n"
 }
 
 ```

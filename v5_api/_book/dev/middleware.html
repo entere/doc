@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>actives_data | 博客中国开发文档</title>
+        <title>middleware | 博客中国开发文档</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -25,10 +25,10 @@
         
     
     
-    <link rel="next" href="../db/users.html" />
+    <link rel="next" href="../db/index.html" />
     
     
-    <link rel="prev" href="../db/index.html" />
+    <link rel="prev" href="../dev/event.html" />
     
 
         
@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="8.1" data-basepath=".." data-revision="Wed Jan 06 2016 14:54:45 GMT+0800 (CST)">
+    <div class="book" data-level="7.6" data-basepath=".." data-revision="Wed Jan 06 2016 14:54:45 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -538,7 +538,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.6" data-path="dev/middleware.html">
+        <li class="chapter active" data-level="7.6" data-path="dev/middleware.html">
             
                 
                     <a href="../dev/middleware.html">
@@ -574,7 +574,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="8.1" data-path="db/actives-data.html">
+        <li class="chapter " data-level="8.1" data-path="db/actives-data.html">
             
                 
                     <a href="../db/actives-data.html">
@@ -909,25 +909,12 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="actives-data">actives_data</h1>
-<p>&#x90AE;&#x4EF6;&#x76F8;&#x5173;&#x6570;&#x636E;</p>
-<h3 id="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">&#x6570;&#x636E;&#x7ED3;&#x6784;</h3>
-<pre><code class="lang-json">
-{
-    <span class="hljs-string">&quot;_id&quot;</span> : ObjectId(<span class="hljs-string">&quot;5677b26e46d81243120041a7&quot;</span>),
-    <span class="hljs-string">&quot;uid&quot;</span> : NumberLong(<span class="hljs-number">605735432</span>),
-    <span class="hljs-string">&quot;email&quot;</span> : <span class="hljs-string">&quot;entere@126.com&quot;</span>,
-    <span class="hljs-string">&quot;view&quot;</span> : <span class="hljs-string">&quot;mail_confirm&quot;</span>, <span class="hljs-comment">//&#x90AE;&#x4EF6;&#x89C6;&#x56FE;&#xFF0C;&#x4E5F;&#x53EF;&#x5F53;&#x4F5C;&#x90AE;&#x4EF6;&#x7C7B;&#x578B;</span>
-    <span class="hljs-string">&quot;code&quot;</span> : <span class="hljs-string">&quot;fbe3c65180ba42d43c781ee1d2b20da4&quot;</span>,
-    <span class="hljs-string">&quot;add_time&quot;</span> : NumberLong(<span class="hljs-number">1450685038</span>),
-    <span class="hljs-string">&quot;expire&quot;</span> : NumberLong(<span class="hljs-number">1450685638</span>),
-    <span class="hljs-string">&quot;ip&quot;</span> : <span class="hljs-string">&quot;127.0.0.1&quot;</span>,
-    <span class="hljs-string">&quot;active_time&quot;</span> : NumberLong(<span class="hljs-number">0</span>),<span class="hljs-comment">//&#x9A8C;&#x8BC1;&#x65F6;&#x95F4;</span>
-    <span class="hljs-string">&quot;active_ip&quot;</span> : <span class="hljs-string">&quot;&quot;</span>,<span class="hljs-comment">//&#x9A8C;&#x8BC1;ip</span>
-    <span class="hljs-string">&quot;updated_at&quot;</span> : ISODate(<span class="hljs-string">&quot;2015-12-21T08:03:58.920Z&quot;</span>),
-    <span class="hljs-string">&quot;created_at&quot;</span> : ISODate(<span class="hljs-string">&quot;2015-12-21T08:03:58.920Z&quot;</span>)
-}
-</code></pre>
+                        <h1 id="middleware">middleware</h1>
+<p>&#x4E2D;&#x95F4;&#x4EF6;</p>
+<h3 id="jwtauthenticate">JwtAuthenticate</h3>
+<p>jwt&#x4E2D;&#x95F4;&#x4EF6;&#x7684;&#x4F5C;&#x7528;&#xFF1A;&#x9A8C;&#x8BC1;&#x767B;&#x5F55;&#x7528;&#x6237;&#x7684;token&#x662F;&#x5426;&#x6709;&#x6548;&#xFF0C;&#x6709;&#x6548;&#x653E;&#x884C;&#x5E76;&#x4F20;&#x8F93;token;&#x672A;&#x767B;&#x5F55;&#x6216;&#x65E0;&#x6548;&#x963B;&#x65AD;&#x8FD4;&#x56DE;&#x9519;&#x8BEF;&#x7801;</p>
+<h3 id="safefiltermiddleware">SafeFilterMiddleware</h3>
+<p>safe&#x4E2D;&#x95F4;&#x4EF6;&#x4F5C;&#x7528;&#xFF1A;&#x5982;&#x679C;&#x662F;ajax&#x8BF7;&#x6C42;api,&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x662F;&#x6307;&#x5B9A;referer&#x7684;ajax&#x624D;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x8BF7;&#x6C42;</p>
 
                     
                     </section>
@@ -938,10 +925,10 @@
         </div>
 
         
-        <a href="../db/index.html" class="navigation navigation-prev " aria-label="Previous page: 数据库字典"><i class="fa fa-angle-left"></i></a>
+        <a href="../dev/event.html" class="navigation navigation-prev " aria-label="Previous page: event"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../db/users.html" class="navigation navigation-next " aria-label="Next page: users"><i class="fa fa-angle-right"></i></a>
+        <a href="../db/index.html" class="navigation navigation-next " aria-label="Next page: 数据库字典"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

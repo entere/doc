@@ -21,11 +21,11 @@
     "word_count" : 1432,
     
     "pics" : {
-        "exists":"Y",
+        "exists":"y",
         "url":['xxx/1.jpg','xxx/2.jpg'],
     },
     "videos" : {
-        "exists":"Y",
+        "exists":"y",
         "url":['xxx/1.flv','xxx/2.flv'],
     },
     "tag" : ['w3c','nodejs'],
@@ -34,16 +34,16 @@
     "last_ip" : "10.10.4.244",
     "state":"A",//A已发布 B草稿箱 C在回收站 D从回收站删除
     "allow":{
-        "comment" : "Y",
-        "reward" : "N",
-        "love" : "Y",
-        "display":"Y",//是否允许别人查看
+        "comment" : "y",
+        "reward" : "n",
+        "love" : "y",
+        "display":"y",//是否允许别人查看
     },
     "monitor" : {
-        "is_audit" : "Y",
-        "is_pending" : "N",
-        "is_hidden" : "N",
-        "is_del" : "N"
+        "is_audit" : "y",
+        "is_pending" : "n",
+        "is_hidden" : "n",
+        "is_del" : "n"
     },
     
 }

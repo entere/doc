@@ -32,6 +32,7 @@
     * [idGenerate](dev/idGenerate.md)
     * [统计redis各数量](dev/number.md)
     * [event](dev/event.md)
+    * [middleware](dev/middleware.md)
 
 * [数据库字典](db/README.md)
     * [actives_data](db/actives-data.md)

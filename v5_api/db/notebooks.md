@@ -17,8 +17,8 @@
     
     "state":"A",//用户自己操作A正常 B隐藏 C删除 
     "monitor" : { //监管操作
-        "is_hidden" : "N",
-        "is_del" : "N"
+        "is_hidden" : "n",
+        "is_del" : "n"
     },
     
 }

@@ -18,11 +18,11 @@
     "avatar" : "",
     "ip" : "127.0.0.1",
     "add_time" : NumberLong(1450668800),
-    "is_valid_email" : "N",
-    "is_valid_mobile" : "N",
-    "is_avatar_uploaded" : "N",
-    "allow_comment" : "Y",
-    "allow_reward" : "N",
+    "is_valid_email" : "n",
+    "is_valid_mobile" : "n",
+    "is_avatar_uploaded" : "n",
+    "allow_comment" : "y",
+    "allow_reward" : "n",
     "reg_from" : "blogchina",
     "intro" : "",
     "homepage" : "",
@@ -51,10 +51,10 @@
     "magnumopus" : "",
     "privacy" : [],
     "monitor" : {
-        "is_audit" : "Y",
-        "is_pending" : "N",
-        "is_lock" : "N",
-        "is_del" : "N"
+        "is_audit" : "y",
+        "is_pending" : "n",
+        "is_lock" : "n",
+        "is_del" : "n"
     },
     
 }
