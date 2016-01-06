@@ -6,12 +6,10 @@
 
 - 是否登陆：是
 
-- 请求参数：
+- 请求参数(header头 Authorization:bearer token)：
 
 ```
 {
-
-    "token":"xxx",
     "current_password":"111111",
     "password":"123456",
     "password_confirmation" =>"123456",

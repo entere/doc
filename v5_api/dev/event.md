@@ -10,6 +10,7 @@
 |SignInEvent|登录后创建并存储jwt令牌|**|
 |UserLogEvent|写用户相关日志|**|
 |TimelineEvent|有相关事件时，把我的动态入库|**|
+|NotificationEvent|入库通知同时未读通知数+1|**|
 |SendEmail[job]|发送各邮件|**|
 
 ### 使用方法：

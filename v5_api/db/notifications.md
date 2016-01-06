@@ -22,10 +22,10 @@
 
 {
     "_id" : ObjectId("547fd2ed2997cfa475516662"),
-    "uid" : 597346824,
+    "uid" : 597346824,//你
     "type" : "follow_user",
     "data" : {
-        "who":123,
+        "who":123,//xxx
     },
     "add_time" : 1450662531,
     "ip" : "127.0.0.1",
@@ -37,12 +37,12 @@
 
 {
     "_id" : ObjectId("547fd2ed2997cfa475516662"),
-    "uid" : 597346824,
+    "uid" : 597346824,//你
     "type" : "follow_collection",
     "data" : {
-        "who":123,
-        "c_id":234,
-        "c_name":"xxx",
+        "who":123,//xxx
+        "c_id":234,//你专题id
+        "c_name":"xxx",//你专题名
     },
     "add_time" : 1450662531,
     "ip" : "127.0.0.1",
@@ -54,12 +54,12 @@
 
 {
     "_id" : ObjectId("547fd2ed2997cfa475516662"),
-    "uid" : 597346824,
+    "uid" : 597346824,//你
     "type" : "support_article",
     "data" : {
-        "who":123,
-        "a_id":234,
-        "a_title":"xxx",
+        "who":123,//xxx
+        "a_id":234,//你文章id
+        "a_title":"xxx",//你文章标题
     },
     "add_time" : 1450662531,
     "ip" : "127.0.0.1",

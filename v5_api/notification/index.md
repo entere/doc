@@ -6,14 +6,9 @@
 
 - 是否登陆：是
 
-- 请求参数：
+- 请求参数(header头 Authorization:bearer token)：
 
 ```
-
-curl -X GET \
-    /url \
-    -H "Authorization: bearer token"
-
 {
     "unread":"y",
 }
