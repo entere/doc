@@ -1,5 +1,5 @@
 # 验证邮箱发送邮件
-邮箱不存在，code返回404
+无需登录，可能注册后就发邮件了，邮箱不存在，code返回404
 
 - URL：/setting/email/confirm
 

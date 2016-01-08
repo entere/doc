@@ -1,6 +1,6 @@
 # 修改密码
 
-- URL：/password/reset
+- URL：/password/update
 
 - HTTP请求方式：POST
 

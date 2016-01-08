@@ -1,4 +1,6 @@
 # 验证邮箱code
+无需登录，可能注册后就发邮件了
+
 - URL：/setting/email/confirm/6913605f90ca5e36f62f608cd77ff07d
 
 - HTTP请求方式：GET
