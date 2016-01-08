@@ -28,9 +28,7 @@
 
 * [开发过程](dev/README.md)
     * [队列](dev/queue.md)
-    * [jwt](dev/jwt.md)
-    * [idGenerate](dev/idGenerate.md)
-    * [统计redis各数量](dev/number.md)
+    * [redis](dev/redis.md)
     * [event](dev/event.md)
     * [middleware](dev/middleware.md)
     * [memcache](dev/memcache.md)
