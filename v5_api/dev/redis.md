@@ -8,15 +8,16 @@
 |v5:auto:uid|set|自增用户id|
 |v5:auto:aid|set|自增文章id|
 |v5:auto:nid|set|自增个人分类id|
-|           |   |        |
+|v5:auto:cid|set|自增专题id|
+|*              |   |        |
 |v5:jwt:uid:xx:iat:xx|set|用户登录产生新jwt,多终端退出登录互不影响|
 |v5:jwt:md5:xx |hash|uid和创建时间,退出登陆会清理此key |
-|              |   |        |
+|*              |   |        |
 |v5:num:uid:xx|hash|用户各数量|
 |v5:num:aid:xx|hash|文章各数量|
 |v5:num:nid:xx|hash|分类各数量|
 |v5:num:cid:xx|hash|专题各数量|
-|              |   |        |
+|*             |   |        |
 |queues:v5:emails|list|邮件队列|
 |queues:v5:default|list|默认队列|
 
