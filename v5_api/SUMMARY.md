@@ -14,6 +14,7 @@
     * [获取用户粉丝UID列表](follow/fans-ids.md)
 * [用户](user/README.md)
     * [获取用户信息](user/show.md)
+    * [批量获取用户信息](user/show-batch.md)
 * [提醒](notification/README.md)
     * [获取用户提醒列表](notification/index.md)
 
