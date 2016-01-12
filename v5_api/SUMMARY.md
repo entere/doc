@@ -33,6 +33,7 @@
     * [event](dev/event.md)
     * [middleware](dev/middleware.md)
     * [memcache](dev/memcache.md)
+    * [etag](dev/etag.md)
 
 * [数据库字典](db/README.md)
     * [actives_data](db/actives-data.md)

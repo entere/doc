@@ -7,11 +7,11 @@
 
 - 是否登陆：否
 
-- 请求参数：
+- 请求参数：/user/fxd?type=name
 
 ```
 {
-   "type":"email"   //in uid,email
+   "type":"email"   //in uid,email,name
 }
 ```
 
