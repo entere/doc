@@ -1,3 +1,0 @@
-# Xxx
-
-> A abc project.

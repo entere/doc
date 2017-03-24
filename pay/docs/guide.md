@@ -1,3 +1,0 @@
-# guide
-
-> A awesome project.

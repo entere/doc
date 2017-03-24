@@ -1,3 +1,0 @@
-# Headline
-
-> A awesome project.
